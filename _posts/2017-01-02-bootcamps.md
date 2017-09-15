@@ -1,6 +1,12 @@
 ---
 layout: post
-title: coding bootcamps
+title: "coding bootcamps"
+modified: 2017-12-20
+tags: [sample post]
+image:
+  feature: abstract-3.jpg
+  credit: dargadgetz
+  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 ---
 
 Even though my own narrative's quickly becoming a cliché of the modern economy--from humanities major to coder via bootcamp over the course of a few months--I'm an evangelist of learning to program, and generally, a believer in the viability of the bootcamp education model. I've spoken to quite a lot of friends recently who are interested in bootcamps, and wanted to write down some of my experiences. 
