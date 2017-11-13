@@ -1,0 +1,239 @@
+---
+title: "Presentation Anaphylactic in Vietnames Databse 2010-2015"
+author: "NGUYEN Khac-Dung"
+date: "June 9, 2017"
+output:
+  beamer_presentation:
+    colortheme: dolphin
+    df_print: kable
+    fig_caption: yes
+    fig_height: 5
+    fig_width: 8
+    fonttheme: structureitalicserif
+    theme: AnnArbor
+    toc: yes
+  ioslides_presentation:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 7
+    incremental: yes
+---
+
+```{r setup, include=FALSE}
+source("~/OneDrive - univ-tlse3.fr/Documents-UPS/Stat/3. Anaphylaxis in Vietnamese Database 10-15/2.CodeR.Anaph.1015.R")
+```
+
+# Materials  
+
+## Criteria for diagnosis anaphylaxis via reporting system  
+
+  + Cases are reports in which adverse drug reactions (ADR) correspond to anaphylaxis defined by the Second Symposium on the Definition and Management of Anaphylaxis [^1]   
+  + Noncases were ADR reports not related to anaphylaxis  
+
+## **Selection criteria for Comparation:**  
+
+  * Inclusion criteria :  
+      + All ADR Reports receveid and registered in National DI&ADR center 
+      + ADR with the description matched with the definition of anaphylaxis.  
+  * Exlusion criteria :  
+      + Report  with imputation 4,5,6 according to WHO Method  
+      + Report anaphylaxis having the delayed time >1 day after the last dose of drug suspected  
+
+----  
+
+  * Case and none-case for the quantify the signal ROR  :
+  
+![Selection criteria](plot/SelectionCriteria1.png)
+
+# Methods   
+
+## Analyse descriptive:  
+* Number of Rerports/Year  
+* Age  
+* Sex  
+* Number of Report Death related to Anaphylaxis  
+* Latency time to onset of anaphylaxis  
+* List of suspect drug  
+
+## Quantify the signals of risk  
+* Method Case/Nonecase with calculation of ROR adjusted by age, sex  
+* Stratification of data...
+* The difference of Vietnames System and other developed system like France.  
+
+# Results  
+
+## Number of case/year with percentage  
+
+* From 2010 to 2015, the system acknowledged `r sum(table.spv[,2])` ADR reports met the criteria for anaphylaxis: 
+
+```{r Report Number}
+table.spv %>% kable(., format = "markdown", caption = "")
+```
+
+## Age sex in Anaphylatic case  
+
+* Age Category:  
+
+```{r Age Cat, echo=FALSE, message=FALSE, warning=FALSE}
+table.age.sex %>%select(AgeCat)%>% table() %>%  as.data.frame() %>% mutate(Percentage=round(Freq/sum(Freq)*100,2))%>% setNames(.,c("Age Category","Frequency","Percentage (%)")) %>% knitr::kable(., format = "markdown", caption = "")
+```
+
+----  
+
+## Description in general  
+
+![](plot/TableDescAnaph.png)
+
+----    
+
+* Plot of Age category and distribution  
+```{r, echo=FALSE, fig.height=5, fig.width=8, message=FALSE, warning=FALSE}
+
+p.case.tuoi=Gmisc::getPvalWilcox(x=ROR1015$tuoi,by=ROR1015$case)
+p.case.tuoi= if_else(p.case.tuoi<0.0001,"<0.0001",paste(p.case.tuoi))
+  gridExtra::grid.arrange(
+ROR1015 %>% filter(case=="None-case",tuoi<150) %>% 
+  ggplot()+geom_density(aes(tuoi))+geom_vline(xintercept = mean(subset(ROR1015,case=="Case")$tuoi,na.rm = T),col="blue",lwd=1.2)+
+  labs(x="Age",title=paste0(" Age in Anaphylactic Case (Year)\n","Median (IQR) = ",Gmisc::describeMedian(spv1015$tuoi)))
+,
+ROR1015 %>% filter(tuoi<150) %>% 
+  ggplot()+ geom_boxplot(aes(case,tuoi))+
+  labs(y="Age",title=paste0("Compare Age in 2 Groups \n","p=",p.case.tuoi))
+,widths=c(9/20,11/20))
+```
+
+---- 
+
+* Sex    
+```{r Sex, echo=FALSE,fig.height=5, fig.width=8, message=FALSE, warning=FALSE}
+ROR1015=ROR1015 %>% mutate(gioi=as.factor(gioi)) %>% filter(gioi!="")
+p.age.sex=Gmisc::getPvalWilcox(x=ROR1015$tuoi,by=ROR1015$gioi)
+p.age.sex= if_else(p.age.sex<0.0001,"<0.0001",paste(round(p.age.sex,2)))
+
+gridExtra::grid.arrange(
+ROR1015 %>% filter(case=="Case") %>% 
+  ggplot()+geom_boxplot(aes(gioi,tuoi)) +theme_bw() +
+  labs(x="Gender",y="Age (year)",
+     title=paste0("Age Sex in Anphaphylatic case \n p-value = ", p.age.sex))
+,
+ROR1015 %>% filter(case=="Case") %>% 
+  ggplot()+geom_bar(aes(gioi,fill=AgeCat)) +theme_bw() +labs(x="Gender",y="Number of Anphaphylatic case")
+,widths=c(9/20,11/20)
+)
+```
+
+##  Latency time in anaphyilactic case  
+
+```{r latency.R}
+# latency.R
+latent %>% group_by(LatCut) %>% tally() %>% mutate(`%`=n/sum(n)*100) %>% 
+  setNames(c("Latency time","Number of case","Percentage %")) %>% 
+  kable(digits = 2,format="markdown")
+```
+
+---  
+
+```{r}
+latent %>% 
+  ggplot()+geom_bar(aes(LatCut,fill=LatCut),stat="count")+
+  theme_bw()+labs(x= "Latency",y="Frequency",
+                  title=paste0("Latency in anaphylactic case (minutes)\n Median (IQR) = ",Gmisc::describeMedian(latent$latency)))
+
+```
+
+## Death related to anaphylaxis  
+From 2010 to 2015, there was `r sum(subset(ROR1015,case=="Case" )$death)` death ADR realated to Anaphylaxis: 
+```{r Death}
+ROR1015 %>% #   filter(case=="Case") %>% 
+  group_by(nam,death) %>% tally() %>% dcast(nam~death) %>% mutate(percentage=round(`1`/(`0`+`1`)*100,2)) %>% 
+  setNames(c("Year","None Death","Death","Percentage (%)")) %>% kable(., format = "markdown", caption = "")
+```
+
+## Death related to anaphylaxis (continue) 
+
+![](plot/DrugRelatedDeathInAnaph.png)
+
+
+##  Drugs suspected  induced anaphylaxis  
+
+* List of 20 most frequently reported drugs  
+```{r list 20 Drug, echo=FALSE, message=FALSE, warning=FALSE}
+spv1015 %>% filter(case==1) %>% filter(ATC!="U") %>% 
+ group_by(Drug) %>% tally(sort=T) %>% 
+  mutate(`Percentage (N=30525)`=round(n/sum(c(1087, 2407, 3236, 6016, 8513, 9266))*100,2)) %>% 
+  head(20)%>% knitr::kable(., format = "markdown", caption = "")
+```  
+
+---- 
+ * Drug involved in anaphylactic shock/reaction ADR:  
+ 
+```{r, fig.height=4, fig.width=7}
+d=spv1015 %>% group_by(Drug) %>% tally() 
+d2=spv1015 %>% filter(case==1) %>% filter(ATC!="U") %>% 
+  group_by(GrPhar) %>%  tally()
+set.seed(187)
+ par(mfrow = c(1, 2))
+wordcloud::wordcloud(d2$GrPhar,d2$n,min.freq=50,colors=RColorBrewer::brewer.pal(6, "Dark2"))
+wordcloud::wordcloud(d$Drug,d$n,min.freq=100,colors=RColorBrewer::brewer.pal(6, "Dark2"))
+
+``` 
+
+----  
+
+* Analyse the Group pharmacologic (ATC codage) with n>10  
+```{r ho duoc ly, echo=FALSE, message=FALSE, warning=FALSE}
+spv1015 %>% filter(case==1) %>% filter(ATC!="U") %>% 
+  group_by(Anato,GrPhar) %>%  tally() %>% filter(n>=10)%>% knitr::kable(., format = "markdown", caption = "")
+```
+
+----  
+
+* Drug involved in **Death ADR** following anaphylactic shock:  
+
+```{r}
+par(mfrow = c(1, 2))
+d2=spv1015 %>% filter(Year.ID %in% tuvong1015$ID) %>% filter(ATC!="U") %>% 
+  group_by(GrPhar) %>%  tally()
+d3=spv1015 %>% filter(Year.ID %in% tuvong1015$ID) %>% filter(ATC!="U") %>% 
+  group_by(Drug) %>%  tally()
+set.seed(187)
+wordcloud::wordcloud(d2$GrPhar,d2$n,min.freq=2,colors=RColorBrewer::brewer.pal(6, "Dark2"))
+
+wordcloud::wordcloud(d3$Drug,d3$n,min.freq=2,colors=RColorBrewer::brewer.pal(6, "Dark2"))
+par(mfrow = c(1, 1))
+```
+
+
+
+# Signal ROR related to anaphylaxis  
+
+## Table ROR of drug 2010-2015  
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+table.or %>% mutate(OR=round(OR,2),
+                    lower=round(lower,2),
+                    upper=round(upper,2)) %>% select(Drug,OR,lower,upper) %>% 
+  knitr::kable(., format = "markdown", caption = "")
+```
+
+
+
+
+## Graphic visualization of ROR all most reported Drugs with CI 95%:   
+
+![ROR adj. 2010-2015 ](OR.SPV.png)
+
+## Signal generation **NEW** (only in Vietnamese database !):  
+
+![](plot/ChymoOR.png)  
+
+## Signal generation possible realted to quality of drug (or technical of injection)  
+
+![](plot/diengiaiOR.png)
+
+## Signal generation with subgroup Cephalosporin:  
+
+![](plot/cephaOR.png)  
+
+
+[^1]: Second symposium on the definition and management of anaphylaxis: Summary report—Second National Institute of Allergy and Infectious Disease/Food Allergy and Anaphylaxis Network symposium -*Journal of Allergy and Clinical Immunology* vol 117 page 391-397 date 2/2006
