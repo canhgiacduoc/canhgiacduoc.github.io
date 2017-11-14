@@ -19,7 +19,7 @@ Ban đọc có thể Tham khảo thêm về R căn bản ở Youtube Chanel và 
 
 ## Nội dung chính của Blog:
 
-* Thiết kế nghiên cứu Dịch tễ và vận dụng trong R và ứng dụng đa nền tảng của `R Markdown`.
+* Thiết kế nghiên cứu Dịch tễ và vận dụng trong R và ứng dụng đa nền tảng của **R Markdown**.
 * Thiết kế mẫu (template) cho Luận văn tốt nghiêp, luận án trên nền tảng R và Latex.
 * Kiến thức về xử lý hình ảnh trong công bố khoa học, làm thế nào để ra được hình ảnh mà tạp chí chấp nhận.
 * Thiết kế sản phẩm trình chiếu chuyên nghiệp trực tiếp từ phân tích trên R.
@@ -30,8 +30,7 @@ Ban đọc có thể Tham khảo thêm về R căn bản ở Youtube Chanel và 
 * Các kiểu công bố và viết sách theo Creative Common.
 * Truyền cảm hứng bởi [R-Blog](https://www.r-bloggers.com/) - nền tảng cốt lõi về rất nhiều lĩnh vực nghiên cứu có thể vận dụng R. Vận dụng được tới đâu và tới mức nào, đó phụ thuộc vào đam mê của chính người đọc và làm nghiên cứu.
 * Phân tích thống kê liên quan tới chuỗi thời gian timeserie và phỏng đoán tương lai của xu hướng
-* ... (to be continued)
-
+* ... (to be continued)[^1]
 
 
 ![Cảnh giác Dược](http://www.prescrire.org/Docu/Images/BDsPharmacovig/FriseVIG.jpg)
@@ -40,14 +39,16 @@ Ban đọc có thể Tham khảo thêm về R căn bản ở Youtube Chanel và 
 ---
 **Contact**: Email canhgiacduoc@gmail.com
 ---
-Admin 1: [NGUYEN Khac-Dung](https://nguyenkhacdung.github.io/), MSc, PharmD, PhD Resercher at Paul-Sabatier University, Doctoral school Biology-Health-Biotechnologies, Regional Pharmacovigilance Centre Midi-Pyrénées, Toulouse, France
-Admin 2: DUONG Khanh Linh, MSc, PharmD
-Insprired by HPSTR Jekyll Theme, Github and R-Studio.
+
+* Admin 1: [NGUYEN Khac-Dung](https://nguyenkhacdung.github.io/), MSc, PharmD, PhD Resercher at Paul-Sabatier University, Doctoral school Biology-Health-Biotechnologies, Regional Pharmacovigilance Centre Midi-Pyrénées, Toulouse, France
+* Admin 2: DUONG Khanh Linh, MSc, PharmD
+
+> Insprired by HPSTR Jekyll Theme, Github and R-Studio.
 
 <!--They say three times the charm, so here is another free responsive Jekyll blog theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. 
 If you've used any of [my other themes](http://mademistakes.com/work/jekyll-themes/) most of this should be familiar territory...
 
-## What HPSTR brings to the table:
+## What HPSTR brings to the table:`R Markdown`
 
 * Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
 * Gracefully degrads in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
