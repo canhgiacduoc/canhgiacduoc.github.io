@@ -39,9 +39,6 @@ Ban đọc có thể Tham khảo thêm về R căn bản ở Youtube Chanel và 
 ---
 **Contact**: Email canhgiacduoc@gmail.com  
 
-
-
-
 ---
 
 - Admin 1: [NGUYEN Khac-Dung](https://nguyenkhacdung.github.io/), MSc, PharmD, PhD Resercher at Paul-Sabatier University, Doctoral school Biology-Health-Biotechnologies, Regional Pharmacovigilance Centre Midi-Pyrénées, Toulouse, France
@@ -75,7 +72,8 @@ If you've used any of [my other themes](http://mademistakes.com/work/jekyll-them
 <div markdown="0"><a href="{{ site.url }}/theme-setup/" class="btn btn-info">Theme Setup</a> <a href="https://github.com/mmistakes/hpstr-jekyll-theme" class="btn btn-success">Download HPSTR</a></div> -->
 
 [^1]: [Bibliography of NGUYEN Khac-Dung](https://nguyenkhacdung.github.io/)
-[^2] : [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org.nz/licences/licences-explained/)
+[^2]: [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org.nz/licences/licences-explained/)
 
 ---
+
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Blog Cảnh giác Dược</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://canhgiacduoc.github.io/" property="cc:attributionName" rel="cc:attributionURL">https://canhgiacduoc.github.io/</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
