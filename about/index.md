@@ -17,7 +17,7 @@ Vậy nên ở đây các kiến thức thống kê sẽ được Cập nhật v
 
 Ban đọc có thể Tham khảo thêm về R căn bản ở Youtube Chanel và blog của thầy [Nguyễn Văn Tuấn](http://tuanvannguyen.blogspot.fr/).
 
-## Nội dung chính của Blog:
+## Nội dung chính của Blog [^2]:
 
 * Thiết kế nghiên cứu Dịch tễ và vận dụng trong R và ứng dụng đa nền tảng của **R Markdown**.
 * Thiết kế mẫu (template) cho Luận văn tốt nghiêp, luận án trên nền tảng R và Latex.
@@ -37,16 +37,15 @@ Ban đọc có thể Tham khảo thêm về R căn bản ở Youtube Chanel và 
 
 
 ---
-**Contact**: Email canhgiacduoc@gmail.com
-[This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.](https://creativecommons.org.nz/wp-content/uploads/2012/05/by-nc-sa1.png) [^2]
+**Contact**: Email canhgiacduoc@gmail.com  
+
+
+
 
 ---
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Blog Cảnh giác Dược</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://canhgiacduoc.github.io/" property="cc:attributionName" rel="cc:attributionURL">https://canhgiacduoc.github.io/</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
----
-
-* Admin 1: [NGUYEN Khac-Dung](https://nguyenkhacdung.github.io/), MSc, PharmD, PhD Resercher at Paul-Sabatier University, Doctoral school Biology-Health-Biotechnologies, Regional Pharmacovigilance Centre Midi-Pyrénées, Toulouse, France
-* Admin 2: DUONG Khanh Linh, MSc, PharmD
+- Admin 1: [NGUYEN Khac-Dung](https://nguyenkhacdung.github.io/), MSc, PharmD, PhD Resercher at Paul-Sabatier University, Doctoral school Biology-Health-Biotechnologies, Regional Pharmacovigilance Centre Midi-Pyrénées, Toulouse, France
+- Admin 2: DUONG Khanh Linh, MSc, PharmD
 
 > Insprired by HPSTR Jekyll Theme, Github and R-Studio.
 
@@ -54,6 +53,10 @@ Ban đọc có thể Tham khảo thêm về R căn bản ở Youtube Chanel và 
 If you've used any of [my other themes](http://mademistakes.com/work/jekyll-themes/) most of this should be familiar territory...
 
 ## What HPSTR brings to the table:`R Markdown`
+> ![This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://www.creativecommons.org.nz/wp-content/uploads/2012/05/by-nc-sa1.png) 
+
+![This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License]({{ site.url }}/images/by-nc-sa1.png) 
+
 
 * Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
 * Gracefully degrads in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
@@ -72,4 +75,7 @@ If you've used any of [my other themes](http://mademistakes.com/work/jekyll-them
 <div markdown="0"><a href="{{ site.url }}/theme-setup/" class="btn btn-info">Theme Setup</a> <a href="https://github.com/mmistakes/hpstr-jekyll-theme" class="btn btn-success">Download HPSTR</a></div> -->
 
 [^1]: [Bibliography of NGUYEN Khac-Dung](https://nguyenkhacdung.github.io/)
-[^2] : [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Blog Cảnh giác Dược</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://canhgiacduoc.github.io/" property="cc:attributionName" rel="cc:attributionURL">https://canhgiacduoc.github.io/</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.)
+[^2] : [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org.nz/licences/licences-explained/)
+
+---
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Blog Cảnh giác Dược</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://canhgiacduoc.github.io/" property="cc:attributionName" rel="cc:attributionURL">https://canhgiacduoc.github.io/</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
