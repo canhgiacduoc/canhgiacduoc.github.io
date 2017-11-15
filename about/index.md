@@ -30,6 +30,10 @@ Ban đọc có thể Tham khảo thêm về R căn bản ở Youtube Chanel và 
 * Các kiểu công bố và viết sách theo Creative Common.
 * Truyền cảm hứng bởi [R-Blog](https://www.r-bloggers.com/) - nền tảng cốt lõi về rất nhiều lĩnh vực nghiên cứu có thể vận dụng R. Vận dụng được tới đâu và tới mức nào, đó phụ thuộc vào đam mê của chính người đọc và làm nghiên cứu.
 * Phân tích thống kê liên quan tới chuỗi thời gian timeserie và phỏng đoán tương lai của xu hướng
+* Giới thiệu về cách quản lý tài liệu tham khảo bằng Zotero, hợp tác trong nghiên cứu thông qua chia sẻ chung cho nhóm nghiên cứu danh sách tài liệu tham khảo của mình, trích xuất và quản lý file tham khảo, xuất sang định dang Bibtex tự động update
+* Giới thiệu về Docear- công cụ mindmaping và quản lý tài liệu tham khảo takenote tuyệt vời cho nhà nghiên cứu. Vận dụng trên file Bitex xuất ra từ Zotero và các nguyên tắc để làm việc trên ...*mây* (Dữ liệu điện toán đám mây). Chỉ ra mối ràng buộc và liên quan giữa các công cụ quản lý khác nhau trên danh sách các tài liệu tham khảo và làm thế nào để trích dẫn hợp lý đa nền tảng dựa trên RMarkdown.
+* Giới thiệu công cụ InkScape (and Photoshop) như công cụ quản lý và xử lý ảnh vector trong publication. Làm thế nào để xuất ra định dạng .EPS theo chuẩn yêu cầu của tạp chí khoa học.
+
 * ... (to be continued)[^1]
 
 
