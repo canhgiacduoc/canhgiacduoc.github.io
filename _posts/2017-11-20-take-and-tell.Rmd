@@ -5,6 +5,7 @@ description: "Take and tell - Pharmacovigilance"
 tags: [pharmacovigilance, video]
 
 ---
+## Giới thiệu chung  
 
 Đây là bài hát truyền tới cộng đồng về các lợi ích và nhận thức về việc cần phải thông báo tới bác sỹ/dược sỹ khi dùng thuốc gặp phải 1 tác dụng có hại/không mong muốn.
 
@@ -13,6 +14,8 @@ tags: [pharmacovigilance, video]
 
 Đây là nội dung mà WHO UMC muốn truyền đạt: 
 [Take&Tell](https://www.who-umc.org/safer-use-of-medicines/taketell/).  
+
+# Nội dung bài hát  - Lyrics  
 
 Link: [www.takeandtell.org](http://www.takeandtell.org/#video)  
 
