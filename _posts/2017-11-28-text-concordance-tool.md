@@ -38,14 +38,19 @@ Phần mền nhỏ gọn và automatic chạy thôi. Có nhiều phiên bản ch
 - Các kiểu tìm kiếm :đơn giản-chữ hoa+thường - cú pháp phức tạp (nâng cao)
 - Sort : Giúp tăng nhận biết vấn đề thông qua hiện thị màu khá phù hợp với mục đích là chọn từ vựng-bối cảnh hay collocation.
 
+![example]({{ site.url }}/images/antconc1.png)
+
 ## Sao lưu các lần tìm kiếm- kinh nghiệm ứng dụng trong trường hợp cụ thể với 1 chủ đề  
 
 - Phần mềm này cũng hỗ trợ sao lưu các kết quả tìm kiếm: Việc này giúp phát triển ngô ngữ/thuật ngữ chuyên ngành và giúp phát triển được rất nhiều bối cảnh sử dụng
 - Hệ thống Phím tắt trong phần mềm khá phong phú : ví dụ: Ctrl+S lưu kết quả trực tiếp thành 1 file txt ; ALT+A : chọn tất cả văn bản trong concordance
 - Sử dụng phân tích cả 1 thư mục thông qua Ctrl+D (thực hành rất nhiều)
 
-.. còn rất nhiều các bạn có thể tự khám phá và ứng dụng nhé
+.. còn rất nhiều các bạn có thể tự khám phá và ứng dụng nhé.
 
 
-----
 [^1]: Anthony, L. (2014). AntConc (Version 3.4.4) [Computer Software]. Tokyo, Japan: Waseda University. Available from http://www.laurenceanthony.net/
+
+---
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
