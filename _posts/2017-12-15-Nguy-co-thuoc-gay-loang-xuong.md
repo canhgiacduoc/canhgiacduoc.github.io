@@ -27,7 +27,7 @@ references:
 bibliography: SCAR.bib
 ---
 
-# Tổng quan hệ thống các nghiên cứu về nguy cơ thuốc gây loãng xương - Mối quan tâm của toàn thế giới  [see @fenner2012a, pp. 33-35; @veyrac_2014_etude]
+Tổng quan hệ thống các nghiên cứu về nguy cơ thuốc gây loãng xương - Mối quan tâm của toàn thế giới  [see @fenner2012a, pp. 33-35; @veyrac_2014_etude]
 
 ## Dịch tễ học liên quan tới các thuốc gây loãng xương  
 Loãng xương (osteoprosis) là chỉ tình trạng bệnh lý mà mật độ xương BMD giảm dưới 2,5 lần mức giới hạn thông thường [@Table định nghĩa WHO về loãng xương và giảm mật độ xương- tiêu chí phân loại]
