@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thiết kế va quản lý biểu mẫu điện tử (form PDF fillable)"
+title: "Thiết kế và quản lý biểu mẫu điện tử (form PDF fillable)"
 modified: 2017-12-13
 tags: [Reporting, Pharmacovigilance]
 image:
@@ -27,6 +27,8 @@ Tại Pháp biểu mẫu báo cáo ADR đã chuyển từ file word sang PDF gi�
 - So sánh với báo cáo online thì cách báo cáo này giúp Dược sỹ có thể ghi nhận phản ứng theo từng bệnh nhân và update thông tin trong báo cáo chỉ cần trên 1 file duy nhất với thời gian không bị hạn chế (khí mới điền được 1 nửa báo cáo và thông tin vẫn được lưu lại cho tới khi điền đầy đủ và submit) 
 - Việc điền báo cáo có thể trên smartphone (tested tính năng điền form với Acrobat Reader trên điện thoại, tính năng Submit trực tiếp hiện chưa hỗ trợ tới thời điểm này). Do đó, báo cáo có thể gửi email bằng smartphone và có thể đính kèm nhiều thông tin hữu ích khác (ảnh chụp mẫu thuốc nghi ngờ, bảng Kết quả xét nghiệm....) giúp cho tín hiệu cảnh giác dược thu được càng chính xác hơn.
 
+
+![Ví dụ]({{ site.url }}/images/dien-form-pdf.png)
 
 ## Conclusion 
 Vậy, việc thiết kế form và cải tiến hình thức và quy trình theo hướng này tỏ ra có nhiều ưu điểm và rất có tiềm năng áp dụng trong thực tế ở Việt Nam (Pháp hiện đang áp dụng kiểu báo cáo này). 
