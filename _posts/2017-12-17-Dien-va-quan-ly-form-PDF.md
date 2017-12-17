@@ -42,8 +42,5 @@ Status (On projet Dec 2017)
 ©Canhgiacduoc(2017)
 
 
-# <br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Blog Cảnh giác Dược</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://canhgiacduoc.github.io/" property="cc:attributionName" rel="cc:attributionURL">https://canhgiacduoc.github.io/</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-
-
 
 
