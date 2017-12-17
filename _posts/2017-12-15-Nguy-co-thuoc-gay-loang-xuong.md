@@ -7,24 +7,24 @@ image:
   feature: abstract-3.jpg
   credit: dargadgetz
   creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
-references:
-- id: fenner2012a
-  title: One-click science marketing
-  author:
-  - family: Fenner
-    given: Martin
-  container-title: Nature Materials
-  volume: 11
-  URL: 'http://dx.doi.org/10.1038/nmat3283'
-  DOI: 10.1038/nmat3283
-  issue: 4
-  publisher: Nature Publishing Group
-  page: 261-263
-  type: article-journal
-  issued:
-    year: 2012
-    month: 3
-bibliography: SCAR.bib
+# references:
+# - id: fenner2012a
+#   title: One-click science marketing
+#   author:
+#   - family: Fenner
+#     given: Martin
+#   container-title: Nature Materials
+#   volume: 11
+#   URL: 'http://dx.doi.org/10.1038/nmat3283'
+#   DOI: 10.1038/nmat3283
+#   issue: 4
+#   publisher: Nature Publishing Group
+#   page: 261-263
+#   type: article-journal
+#   issued:
+#     year: 2012
+#     month: 3
+# bibliography: SCAR.bib
 ---
 
 Tổng quan hệ thống các nghiên cứu về nguy cơ thuốc gây loãng xương - Mối quan tâm của toàn thế giới  [see @fenner2012a, pp. 33-35; @veyrac_2014_etude]
