@@ -23,52 +23,51 @@ PDF là định dạng khá phổ biến, ưu điểm thì không phải bàn c�
 
 Example 
 
- |AER Number      |AER Summary          |Patient     |Suspect products |Concomitant products |Reactions                          |Date Reported |
-|:---------------|:--------------------|:-----------|:----------------|:--------------------|:----------------------------------|:-------------|
-|201308_00023559 |AER No :             |Sex : F     |Bactrim Forte    |NIFLURIL (UNK        |Nécrolyse épidermique toxique(1004 |NA            |
-|NA              |201308_00023559      |Age :6 Y    |NA               |INGREDIENTS)         |10044223))                         |NA            |
-|NA              |Country : FRANCE     |NA          |NA               |NA                   |Outcome : recovered/               |NA            |
-|NA              |Received : 31/12/14  |NA          |NA               |NA                   |SER :Serious                       |NA            |
-|NA              |Last update:12/11/15 |NA          |NA               |NA                   |Change in dose : Not applic        |NA            |
-|201312_00025546 |AER No :             |Sex : F     |Zelboraf         |Non rapporté         |Nécrolyse épidermique toxique(1004 |NA            |
-|NA              |201312_00025546      |Age :75 Y   |NA               |NA                   |10044223))                         |NA            |
-|NA              |Country : FRANCE     |NA          |NA               |NA                   |Outcome : recovered/               |NA            |
-|NA              |Received : 08/04/14  |NA          |NA               |NA                   |SER :Serious                       |NA            |
-|NA              |Last update:12/11/15 |NA          |NA               |NA                   |Change in dose : stopped           |NA            |
-|201403_00027065 |AER No :             |Sex : M     |Vectibix         |Non rapporté         |Syndrome de Stevens-Johnson(100420 |NA            |
-|NA              |201403_00027065      |NA          |NA               |NA                   |042033))                           |NA            |
-|NA              |Country : FRANCE     |NA          |NA               |NA                   |Outcome : Unknown                  |NA            |
-|NA              |Received : 28/03/14  |NA          |NA               |NA                   |SER :Serious                       |NA            |
-|NA              |Last update:12/11/15 |NA          |NA               |NA                   |Change in dose : Unknown           |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |Diabète(10012601))                 |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |Outcome : Unknown                  |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |SER :Serious                       |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |Change in dose : Unknown           |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |Psoriasis(10037153))               |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |Outcome : Unknown                  |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |SER :Not Serious                   |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |Change in dose : Unknown           |NA            |
-|201404_00027143 |AER No :             |Sex : M     |Zelboraf         |DAFALGAN             |Nécrolyse épidermique toxique(1004 |NA            |
-|NA              |201404_00027143      |Prot # :    |NA               |PRIMPERAN            |10044223))                         |NA            |
-|NA              |Country : FRANCE     |NIP-FR-2146 |NA               |SPASFON (FRANCE)     |Outcome : recovered/               |NA            |
-|NA              |Received : 09/05/14  |NA          |NA               |TOPALGIC (FRANCE)    |SER :Serious                       |NA            |
-|NA              |Last update:12/11/15 |NA          |NA               |NA                   |Change in dose : stopped           |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |Fatigue(10016256))                 |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |Outcome : not recove               |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |SER :Serious                       |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |Change in dose : stopped           |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |Nausée(10028813))                  |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |Outcome : recovering               |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |SER :Not Serious                   |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |Change in dose : stopped           |NA            |
-|201404_00027493 |AER No :             |Sex : F     |Lamictal         |Non rapporté         |Nécrolyse épidermique toxique(1004 |NA            |
-|NA              |201404_00027493      |NA          |NA               |NA                   |10044223))                         |NA            |
-|NA              |Country : FRANCE     |NA          |NA               |NA                   |Outcome : recovered/               |NA            |
-|NA              |Received : 06/06/14  |NA          |NA               |NA                   |Change in dose : stopped           |NA            |
-|NA              |Last update:12/11/15 |NA          |NA               |NA                   |Céphalée(10019211))                |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |Outcome : Unknown                  |NA            |
-|NA              |NA                   |NA          |NA               |NA                   |Change in dose : stopped           |NA            |
-
+|AER Number      |Patient     |Suspect products |Concomitant products |Reactions                          |
+|:---------------|:-----------|:----------------|:--------------------|:----------------------------------|
+|201308_00023559 |Sex : F     |Bactrim Forte    |NIFLURIL (UNK        |Nécrolyse épidermique toxique(1004 |
+|NA              |Age :6 Y    |NA               |INGREDIENTS)         |10044223))                         |
+|NA              |NA          |NA               |NA                   |Outcome : recovered/               |
+|NA              |NA          |NA               |NA                   |SER :Serious                       |
+|NA              |NA          |NA               |NA                   |Change in dose : Not applic        |
+|201312_00025546 |Sex : F     |Zelboraf         |Non rapporté         |Nécrolyse épidermique toxique(1004 |
+|NA              |Age :75 Y   |NA               |NA                   |10044223))                         |
+|NA              |NA          |NA               |NA                   |Outcome : recovered/               |
+|NA              |NA          |NA               |NA                   |SER :Serious                       |
+|NA              |NA          |NA               |NA                   |Change in dose : stopped           |
+|201403_00027065 |Sex : M     |Vectibix         |Non rapporté         |Syndrome de Stevens-Johnson(100420 |
+|NA              |NA          |NA               |NA                   |042033))                           |
+|NA              |NA          |NA               |NA                   |Outcome : Unknown                  |
+|NA              |NA          |NA               |NA                   |SER :Serious                       |
+|NA              |NA          |NA               |NA                   |Change in dose : Unknown           |
+|NA              |NA          |NA               |NA                   |Diabète(10012601))                 |
+|NA              |NA          |NA               |NA                   |Outcome : Unknown                  |
+|NA              |NA          |NA               |NA                   |SER :Serious                       |
+|NA              |NA          |NA               |NA                   |Change in dose : Unknown           |
+|NA              |NA          |NA               |NA                   |Psoriasis(10037153))               |
+|NA              |NA          |NA               |NA                   |Outcome : Unknown                  |
+|NA              |NA          |NA               |NA                   |SER :Not Serious                   |
+|NA              |NA          |NA               |NA                   |Change in dose : Unknown           |
+|201404_00027143 |Sex : M     |Zelboraf         |DAFALGAN             |Nécrolyse épidermique toxique(1004 |
+|NA              |Prot # :    |NA               |PRIMPERAN            |10044223))                         |
+|NA              |NIP-FR-2146 |NA               |SPASFON (FRANCE)     |Outcome : recovered/               |
+|NA              |NA          |NA               |TOPALGIC (FRANCE)    |SER :Serious                       |
+|NA              |NA          |NA               |NA                   |Change in dose : stopped           |
+|NA              |NA          |NA               |NA                   |Fatigue(10016256))                 |
+|NA              |NA          |NA               |NA                   |Outcome : not recove               |
+|NA              |NA          |NA               |NA                   |SER :Serious                       |
+|NA              |NA          |NA               |NA                   |Change in dose : stopped           |
+|NA              |NA          |NA               |NA                   |Nausée(10028813))                  |
+|NA              |NA          |NA               |NA                   |Outcome : recovering               |
+|NA              |NA          |NA               |NA                   |SER :Not Serious                   |
+|NA              |NA          |NA               |NA                   |Change in dose : stopped           |
+|201404_00027493 |Sex : F     |Lamictal         |Non rapporté         |Nécrolyse épidermique toxique(1004 |
+|NA              |NA          |NA               |NA                   |10044223))                         |
+|NA              |NA          |NA               |NA                   |Outcome : recovered/               |
+|NA              |NA          |NA               |NA                   |Change in dose : stopped           |
+|NA              |NA          |NA               |NA                   |Céphalée(10019211))                |
+|NA              |NA          |NA               |NA                   |Outcome : Unknown                  |
+|NA              |NA          |NA               |NA                   |Change in dose : stopped           |
 
 > How? 
 
