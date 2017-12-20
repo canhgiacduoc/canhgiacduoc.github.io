@@ -77,21 +77,13 @@ Cuối cùng tình cờ phát hiện trang web chuyển đổi trực tuyến [P
 
 Code Sharing :
 
-{% highlight css %}
-readxl::read_excel("C:/Users/utilisateur/OneDrive - univ-tlse3.fr/Documents-UPS/Stat/SCAR20102015-PDS/SJS TEN1415Fr 2.xlsx",
-                        skip = 6, # bỏ qua 6 dòng đầu tiên, dữ liệu từ file chuyển sẽ biên dịch từ dòng thứ 7 trở đi - cái mà ta muốn
-                        sheet = 2) # sheet 1 bỏ qua vì toàn thông tin hành chính, có thể dùng lệnh lặp để kết nốt tất cả các sheet thành 1 file dat duy nhất
-{% endhighlight %}
-
 {% highlight r %}
 readxl::read_excel("C:/Users/utilisateur/OneDrive - univ-tlse3.fr/Documents-UPS/Stat/SCAR20102015-PDS/SJS TEN1415Fr 2.xlsx",
                         skip = 6, # bỏ qua 6 dòng đầu tiên, dữ liệu từ file chuyển sẽ biên dịch từ dòng thứ 7 trở đi - cái mà ta muốn
                         sheet = 2) # sheet 1 bỏ qua vì toàn thông tin hành chính, có thể dùng lệnh lặp để kết nốt tất cả các sheet thành 1 file dat duy nhất
 {% endhighlight %}
 
-`readxl::read_excel("C:/Users/utilisateur/OneDrive - univ-tlse3.fr/Documents-UPS/Stat/SCAR20102015-PDS/SJS TEN1415Fr 2.xlsx",
-                        skip = 6, # bỏ qua 6 dòng đầu tiên, dữ liệu từ file chuyển sẽ biên dịch từ dòng thứ 7 trở đi - cái mà ta muốn
-                        sheet = 2) # sheet 1 bỏ qua vì toàn thông tin hành chính, có thể dùng lệnh lặp để kết nốt tất cả các sheet thành 1 file dat duy nhất` 
+
                         
 .... to be continued!
 
