@@ -13,7 +13,7 @@ image:
 
 ## Dược sỹ báo cáo nhiều hơn có tiềm ẩn nguy cơ gì không
 
-Dược sỹ thuộc khoa Cận Lâm sàng do đó thường đóng vai trò đưa ra kết
+Dược sỹ thuộc khoa Cận Lâm sàng do đó thường đóng vai trò trung gian gửi báo cáo nhiều hơn là người phát hiện báo cáo như ở nước Pháp. Nếu số lượng dược sỹ mà báo cáo tăng lên thì dự báo cơ cấu báo cáo sẽ vẫn bị lệch nhiều vì nhận thức của các nhóm đối tượng báo cáo khác nhau.
 
 ## Nguyên nhân giải thích cho việc báo cáo ở VN chỉ có kháng sinh và thuốc trị lao
 
@@ -29,7 +29,9 @@ Báo cáo ADR khởi nguồn từ chương trình lao và chương trình y tế
     + Propofol ở pháp báo cáo nhiều nhất có thể giải thích đc không? Ở Pháp có hội gây mê và có các báo cáo liên tục liên quan tới SPV trong gây mê. 
     
 ## SJS/TEN ở Việt Nam có gì khác so với Pháp
-    Ở các nước khá allopurinol ít báo cáo hơn do được sử dụng theo chỉ định, còn ở VN câu chuyện allopurinol là bị sử dụng quá mức và lạm dụng chỉ định nên 
+    Ở các nước khá allopurinol ít báo cáo hơn do được sử dụng theo chỉ định, còn ở VN câu chuyện allopurinol là bị sử dụng quá mức và lạm dụng chỉ định nên báo cáo (có vẻ) là nhiều hơn dẫn tới ADR nhiều hơn,
+    
+    
     
     
     
@@ -40,6 +42,34 @@ Báo cáo ADR khởi nguồn từ chương trình lao và chương trình y tế
 
 
 ![Ví dụ]({{ site.url }}/images/dien-form-pdf.png)
+
+
+## Tables
+
+| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|----
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|=====
+| Foot1   | Foot2   | Foot3eeeeē eeiï 2222222222222222sdfhuhfloauhfluahdfiuhlsdiufhsduhf## Tables
+
+| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|----
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|=====
+| Foot1   | Foot2   | Foot3eeeeē eeiï 2222222222222222sdfhuhfloauhflua hdfiuhlsdiufhsduhfhafygsadfygaskdjfhgkajshg fdkjhasgdh 
+
+{: rules="groups"}
+
+
+
 
 ## Conclusion 
 Vậy, việc thiết kế form và cải tiến hình thức và quy trình theo hướng này tỏ ra có nhiều ưu điểm và rất có tiềm năng áp dụng trong thực tế ở Việt Nam (Pháp hiện đang áp dụng kiểu báo cáo này). 
