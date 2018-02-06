@@ -15,6 +15,10 @@ image:
 
 Dược sỹ thuộc khoa Cận Lâm sàng do đó thường đóng vai trò đưa ra kết
 
+## Nguyên nhân giải thích cho việc báo cáo ở VN chỉ có kháng sinh và thuốc trị lao
+
+Báo cáo ADR khởi nguồn từ chương trình lao và chương trình y tế quốc gia PHP có gắn bó mật thiết và quan hệ 2 chiều với trung tâm ADR. báo cáo lao đóng vai trò quan trọng trong cơ cấu báo cáo ở VN.
+
 
 ## Sốc phản vệ và tín hiệu an toàn thuốc của Việt Nam 
 
@@ -25,7 +29,7 @@ Dược sỹ thuộc khoa Cận Lâm sàng do đó thường đóng vai trò đ�
     + Propofol ở pháp báo cáo nhiều nhất có thể giải thích đc không? Ở Pháp có hội gây mê và có các báo cáo liên tục liên quan tới SPV trong gây mê. 
     
 ## SJS/TEN ở Việt Nam có gì khác so với Pháp
-    Ở các nước khá allopurinol ít báo cáo hơn do được sử dụng theo chỉ định, còn ở VN câu chuyện allopurinol là 
+    Ở các nước khá allopurinol ít báo cáo hơn do được sử dụng theo chỉ định, còn ở VN câu chuyện allopurinol là bị sử dụng quá mức và lạm dụng chỉ định nên 
     
     
     
@@ -42,8 +46,11 @@ Vậy, việc thiết kế form và cải tiến hình thức và quy trình the
 
 Status (On projet Dec 2017) 
 
-```{r child="License.Rmd"}
-```
+
+---
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> 
+
+©Canhgiacduoc(2017)
 
 
 

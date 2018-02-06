@@ -1,0 +1,67 @@
+---
+title: "SCAR 2010-2015 Report"
+author: "NGUYEN Khac-Dung"
+date: "May 9, 2017"
+tags: [sample post, images, test]
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(DiagrammeR)
+# source()
+# load("~/OneDrive - univ-tlse3.fr/Documents-UPS/Stat/WorkingSpace.SPV.Apr.2017.RData")
+# d2010.2015=readxl::read_excel("ROR SPV 2010-2015 for analysis Apr2017.xlsx")
+
+```
+
+# Materials
+All ADR reports in Vietnamese database contains at least one terminology with SOC 0100
+
+**Selection criteria for Comparation:**  
+
+  * Inclusion criteria :  
+      + All ADR Reports receveid and registered in National DI&ADR center 
+      
+  * Exlusion criteria :  
+      + Report not with imputation 4,5,6 according to WHO Method
+     
+    
+```{r, echo=FALSE, fig.cap = "Selection criteria"}
+
+# mermaid("diagram.SCAR.mmd")
+# grViz("SelectionDiagram.gv")
+plot(pressure)
+
+```
+
+# Method 
+* Analysis descriptive:  
+   
+     + Number of reports per month from 2010-2015 of France and Vietnam
+     + Pyramid of distribution Age-Sex
+     + Reporter distribution (spontaneous only) - Region pyramid
+     + Number of Death cases?
+     + ATC code distribution/table
+     + Terminology, preferred term vs HLT in MEDRA: number of term in general disorder in 2 countries, 
+     + Asymmetry of Skin reaction and Anaphylactic shock and antibiotic: huge different btw 2 countries pose the role of social pharmacology  
+ 
+* Method Case/Nonecase  
+
+Case            | Nonecase
+:-------------: | :-------------: 
+A               | B        
+C               | D       
+
+ROR='AD/BC'
+
+# Results
+## Number of reports received per month
+![ásdfasdf DILIDrugHuuNghiHospitalWordcloud ](Plot/DILIDrugHuuNghiHospitalWordcloud.png)
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr)
+t=readxl::read_excel("/Users/macpro/Dropbox/5. De tai PhD Article international/4. SCAR 2006-2015/form scar 2010 - 2012 (lần 1) Loan k68.xlsx",sheet = "scar >24h") %>% 
+  filter(`Age`!="NA",`Giới`!="Unknown") %>% select(`Mã BC`) %>% unique() %>% nrow() 
+```
+
+co so luong bao cao la: `r t` 
