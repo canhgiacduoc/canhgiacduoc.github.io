@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Betalactam-induced anaphylaxis : a stratification analysis"
+modified: 2018-05-30
 tags: [Pharmacovigilance,datamining, Research]
 ---
 
@@ -248,7 +249,7 @@ ggplot(  aes(x=subgroup.betalactam, y=OR, ymin=lower, ymax=upper)) +
   theme_bw()  # use a white background
 ```
 
-![plot of chunk unnamed-chunk-4]({{ site.url }}/figure/unnamed-chunk-4-1.png)
+![GGPlot plot2 of chunk unnamed-chunk-4]({{ site.url }}/figure/unnamed-chunk-4-1.png)
 
 
 
