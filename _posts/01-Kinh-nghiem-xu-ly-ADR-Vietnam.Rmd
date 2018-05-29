@@ -28,8 +28,9 @@ Báo cáo ADR khởi nguồn từ chương trình lao và chương trình y tế
     + Ngoài bản chất thuốc còn có yếu tố khác có thể dẫn tới tai biến : Tốc độ tiêm truyền (liệu có phải chỉ có ở VN không, các nước tham chiếu có gặp vấn đề tương tự không)
     + Propofol ở pháp báo cáo nhiều nhất có thể giải thích đc không? Ở Pháp có hội gây mê và có các báo cáo liên tục liên quan tới SPV trong gây mê. 
     
-## SJS/TEN ở Việt Nam có gì khác so với Pháp
-    Ở các nước khá allopurinol ít báo cáo hơn do được sử dụng theo chỉ định, còn ở VN câu chuyện allopurinol là bị sử dụng quá mức và lạm dụng chỉ định nên báo cáo (có vẻ) là nhiều hơn dẫn tới ADR nhiều hơn,
+## SJS/TEN ở Việt Nam có gì khác so với Pháp  
+
+  Ở các nước khá allopurinol ít báo cáo hơn do được sử dụng theo chỉ định, còn ở VN câu chuyện allopurinol là bị sử dụng quá mức và lạm dụng chỉ định nên báo cáo (có vẻ) là nhiều hơn dẫn tới ADR nhiều hơn,
     
     
     
@@ -46,15 +47,7 @@ Báo cáo ADR khởi nguồn từ chương trình lao và chương trình y tế
 
 ## Tables
 
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|----
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=====
-| Foot1   | Foot2   | Foot3eeeeē eeiï 2222222222222222sdfhuhfloauhfluahdfiuhlsdiufhsduhf## Tables
+
 
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
