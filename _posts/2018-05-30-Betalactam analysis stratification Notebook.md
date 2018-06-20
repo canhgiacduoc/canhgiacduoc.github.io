@@ -249,7 +249,11 @@ ggplot(  aes(x=subgroup.betalactam, y=OR, ymin=lower, ymax=upper)) +
   theme_bw()  # use a white background
 ```
 
+<<<<<<< HEAD:_posts/2018-05-30-Betalactam analysis stratification Notebook.md
 ![GGPlot plot2 of chunk unnamed-chunk-4]({{ site.url }}/figure/unnamed-chunk-4-1.png)
+=======
+![GGPlot plot of chunk unnamed-chunk-4]({{ site.url }}/_posts/figure/unnamed-chunk-4-1.png)
+>>>>>>> 1522bad2ad157ed42d6809c938b743194108ad6a:_posts/2018-05-30-Betalactam analysis stratification Notebook.md
 
 
 
