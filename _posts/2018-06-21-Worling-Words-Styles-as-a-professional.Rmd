@@ -52,3 +52,5 @@ Giúp kết nối các văn bản Word mà không cần phải cài thêm phần
 
 Xem bài hướng dẫn chi tiết trên web...
 
+```{r child="License.Rmd"}
+```
