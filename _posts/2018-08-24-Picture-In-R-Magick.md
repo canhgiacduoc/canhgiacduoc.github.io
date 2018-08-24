@@ -16,7 +16,8 @@ Thông thường R dùng rất phổ biến để phân tích và biểu diễn 
 
 Cài đặt magick package trên CRAN 
 
-```{r sutup, message=FALSE, warning=FALSE}
+
+```r
 #install.packages("magick")
 
 library(magick)
@@ -29,7 +30,6 @@ dl_from_dropbox <- function(x, key) {
   close(con)
   message(noquote(paste(x, "read into", getwd())))                        
 }
-
 ```
 
 
@@ -37,22 +37,33 @@ dl_from_dropbox <- function(x, key) {
 
 # Đọc và ghi ảnh
 
-```{r}
+
+```r
 link="https://dl.dropboxusercontent.com/apitl/1/AACvzJBdR-9FYqSTcmYDIawzyDWiYfX2_zHg642uVoNUIzHCj8ru_zVFlmdXj8f-hYnWIMugkESclQeMx7EhJ-P14clBhs6BPwFE78pMdw5o6Ez4StkRn8_g-aUkluX404YtM_Yw_fsgBiOrubRlSXITOiOItUR1WtBCUDLVzQ-Axh4VYxkCIOTH4xQ_z5GxU1u1u4mUb6sQBRYWXECIXJrSMhlpbRhWmxMTG5cbm99VPRwvCRVt85NL8ygULaXOJM-pOufCh3OKmE9v-64aYFFg"
 
 magick::image_read(link) %>% print()
-
-
 ```
 
-![example](`r paste(link)`)
+```
+##   format width height colorspace matte filesize density
+## 1   JPEG   519    238       sRGB FALSE    71765   72x72
+```
+
+![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png)
+
+![example](https://dl.dropboxusercontent.com/apitl/1/AACvzJBdR-9FYqSTcmYDIawzyDWiYfX2_zHg642uVoNUIzHCj8ru_zVFlmdXj8f-hYnWIMugkESclQeMx7EhJ-P14clBhs6BPwFE78pMdw5o6Ez4StkRn8_g-aUkluX404YtM_Yw_fsgBiOrubRlSXITOiOItUR1WtBCUDLVzQ-Axh4VYxkCIOTH4xQ_z5GxU1u1u4mUb6sQBRYWXECIXJrSMhlpbRhWmxMTG5cbm99VPRwvCRVt85NL8ygULaXOJM-pOufCh3OKmE9v-64aYFFg)
  
 ## Other example 
 
-```{r}
+
+```r
 paste0('<figure>
 	<a href="',link,'"><img src="',link,'" alt=""></a>
 </figure>')
+```
+
+```
+## [1] "<figure>\n\t<a href=\"https://dl.dropboxusercontent.com/apitl/1/AACvzJBdR-9FYqSTcmYDIawzyDWiYfX2_zHg642uVoNUIzHCj8ru_zVFlmdXj8f-hYnWIMugkESclQeMx7EhJ-P14clBhs6BPwFE78pMdw5o6Ez4StkRn8_g-aUkluX404YtM_Yw_fsgBiOrubRlSXITOiOItUR1WtBCUDLVzQ-Axh4VYxkCIOTH4xQ_z5GxU1u1u4mUb6sQBRYWXECIXJrSMhlpbRhWmxMTG5cbm99VPRwvCRVt85NL8ygULaXOJM-pOufCh3OKmE9v-64aYFFg\"><img src=\"https://dl.dropboxusercontent.com/apitl/1/AACvzJBdR-9FYqSTcmYDIawzyDWiYfX2_zHg642uVoNUIzHCj8ru_zVFlmdXj8f-hYnWIMugkESclQeMx7EhJ-P14clBhs6BPwFE78pMdw5o6Ez4StkRn8_g-aUkluX404YtM_Yw_fsgBiOrubRlSXITOiOItUR1WtBCUDLVzQ-Axh4VYxkCIOTH4xQ_z5GxU1u1u4mUb6sQBRYWXECIXJrSMhlpbRhWmxMTG5cbm99VPRwvCRVt85NL8ygULaXOJM-pOufCh3OKmE9v-64aYFFg\" alt=\"\"></a>\n</figure>"
 ```
 
 sdfasf
@@ -67,8 +78,11 @@ sdfasf
                         
 Status (On projet Aug 2018) 
 
-```{r child="License.Rmd"}
-```
+
+---
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> 
+
+©Canhgiacduoc(2017)
 
 
 
