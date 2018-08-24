@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Xử lý ảnh dùng R và gói lệnh Magick - P1: Cơ bản" "
+title: "Xử lý ảnh dùng R và gói lệnh Magick - P1: Cơ bản"
 modified: 2018-08-23
 tags: [R,data visualisation]
 image:
