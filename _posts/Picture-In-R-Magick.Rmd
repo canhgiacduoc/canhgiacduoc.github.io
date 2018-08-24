@@ -51,7 +51,7 @@ magick::image_read(link) %>% print()
 
 
 <figure>
-	<a href=",`r paste(link)`,"><img src="',`r paste(link)`," alt=""></a>
+	<a href="`r paste(link)`"><img src="`r paste(link)`" alt=""></a>
 </figure>
 
 ## sdfasf
