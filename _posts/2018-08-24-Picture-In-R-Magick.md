@@ -7,7 +7,7 @@ image:
   feature: prescrire-pv.jpg
   credit: nguyenkhacdung
   creditlink: https://desdaughter.com/2013/05/08/petit-manuel-de-pharmacovigilance-et-pharmacologie-clinique-sur-les-effets-nocifs-des-medicaments/
-# output: html_notebook
+#output: html_notebook
 ---
 
 Thông thường R dùng rất phổ biến để phân tích và biểu diễn số liệu, tuy nhiên R có thể làm được rất nhiều thao tác xử lý ảnh và quan trong nhất là tính "reproductive" (lặp lại) đặc trưng khi dùng R. Thông qua các ví dụ về xử lý ảnh, R có thể thay thế hoàn hảo cho các phần mềm xử lý ảnh thông dùng ở một vài thao tác, tạo ảnh động và các thuật toán sâu hơn dựa trên database là dữ liệu ảnh.
@@ -21,6 +21,7 @@ Cài đặt magick package trên CRAN
 #install.packages("magick")
 
 library(magick)
+library(dplyr)
 dl_from_dropbox <- function(x, key) {
   require(RCurl)
   bin <- getBinaryURL(paste0("https://dl.dropboxusercontent.com/s/", key, "/", x),
@@ -29,6 +30,21 @@ dl_from_dropbox <- function(x, key) {
   writeBin(bin, con)
   close(con)
   message(noquote(paste(x, "read into", getwd())))                        
+}
+
+add_logo=function(pic){
+  pic=pic %>% 
+  
+image_composite(image_read(drop_media('Blog/Figure/Canhgiacduoc_Icon.png')$link) %>%
+                image_scale("40x"),
+                offset = "+0+0" , operator = "blend", compose_args="50") %>% 
+image_annotate("©canhgiacduoc", 
+               color = "#69E0D8", 
+               size = 8,
+               location = paste0("+",((.) %>% image_info())$width-13*5,
+                                 "+",((.) %>% image_info())$height-18 ))
+  # image_write(doc)
+  return(pic)
 }
 ```
 
@@ -39,20 +55,21 @@ dl_from_dropbox <- function(x, key) {
 
 
 
-![example](https://dl.dropboxusercontent.com/apitl/1/AACvzJBdR-9FYqSTcmYDIawzyDWiYfX2_zHg642uVoNUIzHCj8ru_zVFlmdXj8f-hYnWIMugkESclQeMx7EhJ-P14clBhs6BPwFE78pMdw5o6Ez4StkRn8_g-aUkluX404YtM_Yw_fsgBiOrubRlSXITOiOItUR1WtBCUDLVzQ-Axh4VYxkCIOTH4xQ_z5GxU1u1u4mUb6sQBRYWXECIXJrSMhlpbRhWmxMTG5cbm99VPRwvCRVt85NL8ygULaXOJM-pOufCh3OKmE9v-64aYFFg)
+![example](https://dl.dropboxusercontent.com/apitl/1/AACmoGHeFuUaUKPTIPO5ChtgSBsh9gLBlhtYltAEw1IA61tB-Rg0Jlx_VB9N77JlvICq2Fy-rH2HPD6hZX7WyOgiiri8D8dW0nhgUVJxxx9c9a9byJeYUf9N3QYCNmmeQuDD6P8qV-oOZ-_4zd04X9CF7xl_Y4ynuvSv_E4JXr4YTJFEWU1tO-gjqdkXeSRw1x-tclz8wXPGbJ9qx_ZD_5gCv_2ffOb3QZ39Bv7b4kBGKNnkFYckRFGJLJkwPG1H_ygdIZHN3A-z5GPeB4EUps8B)
  
 ## Other example 
 
 
 <figure>
-	<a href="https://dl.dropboxusercontent.com/apitl/1/AACvzJBdR-9FYqSTcmYDIawzyDWiYfX2_zHg642uVoNUIzHCj8ru_zVFlmdXj8f-hYnWIMugkESclQeMx7EhJ-P14clBhs6BPwFE78pMdw5o6Ez4StkRn8_g-aUkluX404YtM_Yw_fsgBiOrubRlSXITOiOItUR1WtBCUDLVzQ-Axh4VYxkCIOTH4xQ_z5GxU1u1u4mUb6sQBRYWXECIXJrSMhlpbRhWmxMTG5cbm99VPRwvCRVt85NL8ygULaXOJM-pOufCh3OKmE9v-64aYFFg"><img src="https://dl.dropboxusercontent.com/apitl/1/AACvzJBdR-9FYqSTcmYDIawzyDWiYfX2_zHg642uVoNUIzHCj8ru_zVFlmdXj8f-hYnWIMugkESclQeMx7EhJ-P14clBhs6BPwFE78pMdw5o6Ez4StkRn8_g-aUkluX404YtM_Yw_fsgBiOrubRlSXITOiOItUR1WtBCUDLVzQ-Axh4VYxkCIOTH4xQ_z5GxU1u1u4mUb6sQBRYWXECIXJrSMhlpbRhWmxMTG5cbm99VPRwvCRVt85NL8ygULaXOJM-pOufCh3OKmE9v-64aYFFg" alt=""></a>
+	<a href="https://dl.dropboxusercontent.com/apitl/1/AACmoGHeFuUaUKPTIPO5ChtgSBsh9gLBlhtYltAEw1IA61tB-Rg0Jlx_VB9N77JlvICq2Fy-rH2HPD6hZX7WyOgiiri8D8dW0nhgUVJxxx9c9a9byJeYUf9N3QYCNmmeQuDD6P8qV-oOZ-_4zd04X9CF7xl_Y4ynuvSv_E4JXr4YTJFEWU1tO-gjqdkXeSRw1x-tclz8wXPGbJ9qx_ZD_5gCv_2ffOb3QZ39Bv7b4kBGKNnkFYckRFGJLJkwPG1H_ygdIZHN3A-z5GPeB4EUps8B"><img src="https://dl.dropboxusercontent.com/apitl/1/AACmoGHeFuUaUKPTIPO5ChtgSBsh9gLBlhtYltAEw1IA61tB-Rg0Jlx_VB9N77JlvICq2Fy-rH2HPD6hZX7WyOgiiri8D8dW0nhgUVJxxx9c9a9byJeYUf9N3QYCNmmeQuDD6P8qV-oOZ-_4zd04X9CF7xl_Y4ynuvSv_E4JXr4YTJFEWU1tO-gjqdkXeSRw1x-tclz8wXPGbJ9qx_ZD_5gCv_2ffOb3QZ39Bv7b4kBGKNnkFYckRFGJLJkwPG1H_ygdIZHN3A-z5GPeB4EUps8B" alt=""></a>
 </figure>
 
 ## sdfasf
-
+ 
 test 2
+
 <figure>
-	<a href="https://dl.dropboxusercontent.com/apitl/1/AACvzJBdR-9FYqSTcmYDIawzyDWiYfX2_zHg642uVoNUIzHCj8ru_zVFlmdXj8f-hYnWIMugkESclQeMx7EhJ-P14clBhs6BPwFE78pMdw5o6Ez4StkRn8_g-aUkluX404YtM_Yw_fsgBiOrubRlSXITOiOItUR1WtBCUDLVzQ-Axh4VYxkCIOTH4xQ_z5GxU1u1u4mUb6sQBRYWXECIXJrSMhlpbRhWmxMTG5cbm99VPRwvCRVt85NL8ygULaXOJM-pOufCh3OKmE9v-64aYFFg"><img src="https://dl.dropboxusercontent.com/apitl/1/AACvzJBdR-9FYqSTcmYDIawzyDWiYfX2_zHg642uVoNUIzHCj8ru_zVFlmdXj8f-hYnWIMugkESclQeMx7EhJ-P14clBhs6BPwFE78pMdw5o6Ez4StkRn8_g-aUkluX404YtM_Yw_fsgBiOrubRlSXITOiOItUR1WtBCUDLVzQ-Axh4VYxkCIOTH4xQ_z5GxU1u1u4mUb6sQBRYWXECIXJrSMhlpbRhWmxMTG5cbm99VPRwvCRVt85NL8ygULaXOJM-pOufCh3OKmE9v-64aYFFg" alt=""></a>
+	<a href="https://dl.dropboxusercontent.com/apitl/1/AACmoGHeFuUaUKPTIPO5ChtgSBsh9gLBlhtYltAEw1IA61tB-Rg0Jlx_VB9N77JlvICq2Fy-rH2HPD6hZX7WyOgiiri8D8dW0nhgUVJxxx9c9a9byJeYUf9N3QYCNmmeQuDD6P8qV-oOZ-_4zd04X9CF7xl_Y4ynuvSv_E4JXr4YTJFEWU1tO-gjqdkXeSRw1x-tclz8wXPGbJ9qx_ZD_5gCv_2ffOb3QZ39Bv7b4kBGKNnkFYckRFGJLJkwPG1H_ygdIZHN3A-z5GPeB4EUps8B"><img src="https://dl.dropboxusercontent.com/apitl/1/AACmoGHeFuUaUKPTIPO5ChtgSBsh9gLBlhtYltAEw1IA61tB-Rg0Jlx_VB9N77JlvICq2Fy-rH2HPD6hZX7WyOgiiri8D8dW0nhgUVJxxx9c9a9byJeYUf9N3QYCNmmeQuDD6P8qV-oOZ-_4zd04X9CF7xl_Y4ynuvSv_E4JXr4YTJFEWU1tO-gjqdkXeSRw1x-tclz8wXPGbJ9qx_ZD_5gCv_2ffOb3QZ39Bv7b4kBGKNnkFYckRFGJLJkwPG1H_ygdIZHN3A-z5GPeB4EUps8B" alt=""></a>
 </figure>
 
 
