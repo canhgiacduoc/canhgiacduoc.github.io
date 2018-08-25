@@ -94,7 +94,7 @@ image_read(drop_media('Blog/Figure/prescrire-pv.jpg')$link) %>%
 
 ```
 
-![example](`r paste(link)`)
+![example](`r upload_get_link_image_dropbox(gg,"image-test2.png")`)
 
 
 ![example](https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1)
@@ -122,7 +122,7 @@ gg=mtcars %>% ggplot(aes(disp,mpg)) +geom_point(aes(col=as.factor(cyl)))
  
 test 2
 
-`r paste0(upload_get_link_image_dropbox(gg,"image-test2.png"))`
+
 
 
 .... to be continued!

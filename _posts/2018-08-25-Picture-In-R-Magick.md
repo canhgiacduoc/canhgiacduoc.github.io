@@ -80,7 +80,7 @@ upload_get_link_image_dropbox=function(gg,name){
 
 
 
-![example](https://dl.dropboxusercontent.com/apitl/1/AAAsQxsunDDInu3fmMTqs1UNHfPc5hZSwdsYeHvzJfG9GskFofWVPKzjaQGuEvav0pKoOB4J34_LyW-hZRBQaO1o9Fcrl7HQYb6_cg3l6pp8EpfF9_35DHQ-CkICrb2uzEwOMuf8fyIbUV6OWNKyjyqwmXG7jY2XyksloZ-hF0KS7SkuWQa6La9zhOshT393xRkuhmAqGXoGpGu_FP2OPMQDfxgurGOK5kfgDtAIgpFY9UaamfwxXyXw3F9AQmFpmLYBIJuiT3L8DlqleiWSq2tQ)
+![example](https://www.dropbox.com/s/r0asa7klx7waeu0/image-test2.png?raw=1)
 
 
 ![example](https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1)
@@ -106,7 +106,7 @@ gg=mtcars %>% ggplot(aes(disp,mpg)) +geom_point(aes(col=as.factor(cyl)))
  
 test 2
 
-https://www.dropbox.com/s/cpbzw29h8qemnri/image-test2.png?raw=1
+
 
 
 .... to be continued!
