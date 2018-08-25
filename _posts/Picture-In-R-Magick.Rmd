@@ -69,21 +69,15 @@ image_read(drop_media('Blog/Figure/prescrire-pv.jpg')$link) %>%
 
 ![example](`r paste(link)`)
 
-<<<<<<< HEAD
+
 ![example](https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1)
-=======
-![example](https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?dl=0)
->>>>>>> 11dfd6511d98f3441d4d33473d6cfa0ef0387cf0
+
 
 ## Other example 
 
 
 <figure>
-<<<<<<< HEAD
-	<a href="https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1"><img src="https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1" alt=""></a>
-=======
-	<a href="https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?dl=0"><img src="https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?dl=0" alt=""></a>
->>>>>>> 11dfd6511d98f3441d4d33473d6cfa0ef0387cf0
+<a href="https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1"><img src="https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1" alt=""></a>
 </figure>
 
 ## sdfasf
