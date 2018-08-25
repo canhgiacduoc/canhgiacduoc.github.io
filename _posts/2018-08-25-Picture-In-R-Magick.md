@@ -46,6 +46,31 @@ image_annotate("©canhgiacduoc",
   # image_write(doc)
   return(pic)
 }
+
+upload_get_link_image_dropbox=function(gg,name){
+  library(ggplot2)
+  library(magick)
+  
+  path.mac="~/OneDrive - univ-tlse3.fr/Documents-UPS/Stat/Blog CanhgiacDuoc/images/"
+  
+  ggsave(paste0(path.mac,name),
+         gg
+  )
+  
+  
+  image_read(paste0(path.mac,name)) %>%
+    add_logo_big() %>% 
+    image_write(paste0(path.mac,name))
+  
+  drop_upload(paste0(path.mac,name),
+              path = "Blog/Figure",mode = "overwrite")
+  link.01= (drop_share(paste0("Blog/Figure/",name))$url ) %>% 
+    stringr::str_replace("dl=0","raw=1")
+  
+  if (file.exists(paste0(path.mac,name))) file.remove(paste0(path.mac,name))
+  
+  return(link.01)
+}
 ```
 
 
@@ -55,7 +80,7 @@ image_annotate("©canhgiacduoc",
 
 
 
-![example](https://dl.dropboxusercontent.com/apitl/1/AADrnIHqKi3PVRiGvrEBgA72a9VdobcmthWkVjjTwC68uMPNrv_Nicao2LgQ-ckQFQdKcDixviK0afCIhL5w3ptPnLHjdCaPYsOue8UVElcmzusNqkl-tCA1BDebexDDu9kP8eIwEKB1VfkHLY4XQP3s2LNvegcoDZCrSyXoDLkskx_lpol_RVg5izS88B37Z6f9SS5QaF_W6mX0Qeo3Ttmb9ok5_ys8X9FrniN68nVwsQRHdaYfS50Czg7Iq-Is0m5fS78M-dNYwvegASXx8ZR0)
+![example](https://dl.dropboxusercontent.com/apitl/1/AAAsQxsunDDInu3fmMTqs1UNHfPc5hZSwdsYeHvzJfG9GskFofWVPKzjaQGuEvav0pKoOB4J34_LyW-hZRBQaO1o9Fcrl7HQYb6_cg3l6pp8EpfF9_35DHQ-CkICrb2uzEwOMuf8fyIbUV6OWNKyjyqwmXG7jY2XyksloZ-hF0KS7SkuWQa6La9zhOshT393xRkuhmAqGXoGpGu_FP2OPMQDfxgurGOK5kfgDtAIgpFY9UaamfwxXyXw3F9AQmFpmLYBIJuiT3L8DlqleiWSq2tQ)
 
 
 ![example](https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1)
@@ -68,13 +93,20 @@ image_annotate("©canhgiacduoc",
 <a href="https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1"><img src="https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1" alt=""></a>
 </figure>
 
-## sdfasf
+## Đọc ảnh procedure
+ 
+
+```r
+gg=mtcars %>% ggplot(aes(disp,mpg)) +geom_point(aes(col=as.factor(cyl))) 
+
+# upload_get_link_image_dropbox(gg,"image-test1.png")
+```
+ 
+ 
  
 test 2
 
-<figure>
-	<a href="https://dl.dropboxusercontent.com/apitl/1/AADrnIHqKi3PVRiGvrEBgA72a9VdobcmthWkVjjTwC68uMPNrv_Nicao2LgQ-ckQFQdKcDixviK0afCIhL5w3ptPnLHjdCaPYsOue8UVElcmzusNqkl-tCA1BDebexDDu9kP8eIwEKB1VfkHLY4XQP3s2LNvegcoDZCrSyXoDLkskx_lpol_RVg5izS88B37Z6f9SS5QaF_W6mX0Qeo3Ttmb9ok5_ys8X9FrniN68nVwsQRHdaYfS50Czg7Iq-Is0m5fS78M-dNYwvegASXx8ZR0"><img src="https://dl.dropboxusercontent.com/apitl/1/AADrnIHqKi3PVRiGvrEBgA72a9VdobcmthWkVjjTwC68uMPNrv_Nicao2LgQ-ckQFQdKcDixviK0afCIhL5w3ptPnLHjdCaPYsOue8UVElcmzusNqkl-tCA1BDebexDDu9kP8eIwEKB1VfkHLY4XQP3s2LNvegcoDZCrSyXoDLkskx_lpol_RVg5izS88B37Z6f9SS5QaF_W6mX0Qeo3Ttmb9ok5_ys8X9FrniN68nVwsQRHdaYfS50Czg7Iq-Is0m5fS78M-dNYwvegASXx8ZR0" alt=""></a>
-</figure>
+https://www.dropbox.com/s/cpbzw29h8qemnri/image-test2.png?raw=1
 
 
 .... to be continued!
