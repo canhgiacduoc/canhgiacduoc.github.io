@@ -16,7 +16,8 @@ Thông thường R dùng rất phổ biến để phân tích và biểu diễn 
 
 Cài đặt magick package trên CRAN 
 
-```{r sutup, message=FALSE, warning=FALSE}
+
+```r
 #install.packages("magick")
 
 library(magick)
@@ -52,22 +53,9 @@ image_annotate("©canhgiacduoc",
 
 # Đọc và ghi ảnh
 
-```{r, include=FALSE}
-link=drop_media('Blog/Figure/prescrire-pv.jpg')$link #"https://dl.dropboxusercontent.com/apitl/1/AACvzJBdR-9FYqSTcmYDIawzyDWiYfX2_zHg642uVoNUIzHCj8ru_zVFlmdXj8f-hYnWIMugkESclQeMx7EhJ-P14clBhs6BPwFE78pMdw5o6Ez4StkRn8_g-aUkluX404YtM_Yw_fsgBiOrubRlSXITOiOItUR1WtBCUDLVzQ-Axh4VYxkCIOTH4xQ_z5GxU1u1u4mUb6sQBRYWXECIXJrSMhlpbRhWmxMTG5cbm99VPRwvCRVt85NL8ygULaXOJM-pOufCh3OKmE9v-64aYFFg"
 
-# magick::image_read(link) %>% image_info()
 
-link1=paste0('<figure>
-	<a href="',link, '"><img src="',link,'" alt=""></a>
-</figure>')
-  
-image_read(drop_media('Blog/Figure/prescrire-pv.jpg')$link) %>%
-  add_logo() %>% 
-  as.raster() %>% plot()
-
-```
-
-![example](`r paste(link)`)
+![example](https://dl.dropboxusercontent.com/apitl/1/AAA8Vq52pkn5M0zdso0mrRAU4_KlW7GItph399qAp2Zf-fkP80P3VxfVh20kQJ-6rPmA9uQH3Ag4AXixb7qCY0up_9uYmB-C36IOs9diT2kPMpqrTevQKIu5_x1-0O15oW0YgMT2LKui9z-fq6dALSkYo9tdgFe7rmyt5toLfOJ8Ai_6_DJBYCtuURTXGtUPQ6-P3t8dtulsuH4N9UtcXN6EH3UICuf0OvNt_GQirUfntk4eZfH_X93rHsxhm8YCr33tS9jYvhBAZOQakS1foQi5)
 
 ![example](https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1)
 
@@ -82,7 +70,9 @@ image_read(drop_media('Blog/Figure/prescrire-pv.jpg')$link) %>%
  
 test 2
 
-`r paste0(link1)`
+<figure>
+	<a href="https://dl.dropboxusercontent.com/apitl/1/AAA8Vq52pkn5M0zdso0mrRAU4_KlW7GItph399qAp2Zf-fkP80P3VxfVh20kQJ-6rPmA9uQH3Ag4AXixb7qCY0up_9uYmB-C36IOs9diT2kPMpqrTevQKIu5_x1-0O15oW0YgMT2LKui9z-fq6dALSkYo9tdgFe7rmyt5toLfOJ8Ai_6_DJBYCtuURTXGtUPQ6-P3t8dtulsuH4N9UtcXN6EH3UICuf0OvNt_GQirUfntk4eZfH_X93rHsxhm8YCr33tS9jYvhBAZOQakS1foQi5"><img src="https://dl.dropboxusercontent.com/apitl/1/AAA8Vq52pkn5M0zdso0mrRAU4_KlW7GItph399qAp2Zf-fkP80P3VxfVh20kQJ-6rPmA9uQH3Ag4AXixb7qCY0up_9uYmB-C36IOs9diT2kPMpqrTevQKIu5_x1-0O15oW0YgMT2LKui9z-fq6dALSkYo9tdgFe7rmyt5toLfOJ8Ai_6_DJBYCtuURTXGtUPQ6-P3t8dtulsuH4N9UtcXN6EH3UICuf0OvNt_GQirUfntk4eZfH_X93rHsxhm8YCr33tS9jYvhBAZOQakS1foQi5" alt=""></a>
+</figure>
 
 
 .... to be continued!
@@ -90,8 +80,11 @@ test 2
                         
 Status (On projet Aug 2018) 
 
-```{r child="License.Rmd"}
-```
+
+---
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> 
+
+©Canhgiacduoc(2017)
 
 
 
