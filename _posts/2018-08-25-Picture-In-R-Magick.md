@@ -55,15 +55,25 @@ image_annotate("©canhgiacduoc",
 
 
 
+<<<<<<< HEAD
 ![example](https://dl.dropboxusercontent.com/apitl/1/AAA8Vq52pkn5M0zdso0mrRAU4_KlW7GItph399qAp2Zf-fkP80P3VxfVh20kQJ-6rPmA9uQH3Ag4AXixb7qCY0up_9uYmB-C36IOs9diT2kPMpqrTevQKIu5_x1-0O15oW0YgMT2LKui9z-fq6dALSkYo9tdgFe7rmyt5toLfOJ8Ai_6_DJBYCtuURTXGtUPQ6-P3t8dtulsuH4N9UtcXN6EH3UICuf0OvNt_GQirUfntk4eZfH_X93rHsxhm8YCr33tS9jYvhBAZOQakS1foQi5)
 
 ![example](https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1)
+=======
+![example](https://dl.dropboxusercontent.com/apitl/1/AABk7mjfiLLlO4ruWEJU7MTiHdBvnCxOZ3IUSjRwaK5A_5tgdgbunvsu7Y9cRu-P8G5wuSitjCOEg5V6pn2L-7v6tRXvxWM8eH3d6UUa3qXbz7LM5MqRKRL3ei3Y2PWwE4D7Z_dh4nML-fl5AFlli-LmmPmjmRuuyvZnIXm-SUZzs_KviVQHmO-wTQc_5wQLXjTiZ5xeX9DBgNdOgx3EJNqu3NbpIg6zE2-QjSMdPAX3NRaplVUs2tAc26pl3NoC3peBZOzeSt62SN0lt39Z_I6Q)
+
+![example](https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?dl=0)
+>>>>>>> 11dfd6511d98f3441d4d33473d6cfa0ef0387cf0
 
 ## Other example 
 
 
 <figure>
+<<<<<<< HEAD
 	<a href="https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1"><img src="https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1" alt=""></a>
+=======
+	<a href="https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?dl=0"><img src="https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?dl=0" alt=""></a>
+>>>>>>> 11dfd6511d98f3441d4d33473d6cfa0ef0387cf0
 </figure>
 
 ## sdfasf
@@ -71,7 +81,11 @@ image_annotate("©canhgiacduoc",
 test 2
 
 <figure>
+<<<<<<< HEAD
 	<a href="https://dl.dropboxusercontent.com/apitl/1/AAA8Vq52pkn5M0zdso0mrRAU4_KlW7GItph399qAp2Zf-fkP80P3VxfVh20kQJ-6rPmA9uQH3Ag4AXixb7qCY0up_9uYmB-C36IOs9diT2kPMpqrTevQKIu5_x1-0O15oW0YgMT2LKui9z-fq6dALSkYo9tdgFe7rmyt5toLfOJ8Ai_6_DJBYCtuURTXGtUPQ6-P3t8dtulsuH4N9UtcXN6EH3UICuf0OvNt_GQirUfntk4eZfH_X93rHsxhm8YCr33tS9jYvhBAZOQakS1foQi5"><img src="https://dl.dropboxusercontent.com/apitl/1/AAA8Vq52pkn5M0zdso0mrRAU4_KlW7GItph399qAp2Zf-fkP80P3VxfVh20kQJ-6rPmA9uQH3Ag4AXixb7qCY0up_9uYmB-C36IOs9diT2kPMpqrTevQKIu5_x1-0O15oW0YgMT2LKui9z-fq6dALSkYo9tdgFe7rmyt5toLfOJ8Ai_6_DJBYCtuURTXGtUPQ6-P3t8dtulsuH4N9UtcXN6EH3UICuf0OvNt_GQirUfntk4eZfH_X93rHsxhm8YCr33tS9jYvhBAZOQakS1foQi5" alt=""></a>
+=======
+	<a href="https://dl.dropboxusercontent.com/apitl/1/AABk7mjfiLLlO4ruWEJU7MTiHdBvnCxOZ3IUSjRwaK5A_5tgdgbunvsu7Y9cRu-P8G5wuSitjCOEg5V6pn2L-7v6tRXvxWM8eH3d6UUa3qXbz7LM5MqRKRL3ei3Y2PWwE4D7Z_dh4nML-fl5AFlli-LmmPmjmRuuyvZnIXm-SUZzs_KviVQHmO-wTQc_5wQLXjTiZ5xeX9DBgNdOgx3EJNqu3NbpIg6zE2-QjSMdPAX3NRaplVUs2tAc26pl3NoC3peBZOzeSt62SN0lt39Z_I6Q"><img src="https://dl.dropboxusercontent.com/apitl/1/AABk7mjfiLLlO4ruWEJU7MTiHdBvnCxOZ3IUSjRwaK5A_5tgdgbunvsu7Y9cRu-P8G5wuSitjCOEg5V6pn2L-7v6tRXvxWM8eH3d6UUa3qXbz7LM5MqRKRL3ei3Y2PWwE4D7Z_dh4nML-fl5AFlli-LmmPmjmRuuyvZnIXm-SUZzs_KviVQHmO-wTQc_5wQLXjTiZ5xeX9DBgNdOgx3EJNqu3NbpIg6zE2-QjSMdPAX3NRaplVUs2tAc26pl3NoC3peBZOzeSt62SN0lt39Z_I6Q" alt=""></a>
+>>>>>>> 11dfd6511d98f3441d4d33473d6cfa0ef0387cf0
 </figure>
 
 
