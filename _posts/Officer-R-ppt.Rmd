@@ -1,0 +1,52 @@
+---
+layout: post
+title: "R và MS Office: P1 sự kết hợp hoàn hảo R và Powerpoint"
+modified: 2018-08-23
+tags: [R,officer]
+image:
+  feature: prescrire-pv.jpg
+  credit: nguyenkhacdung
+  creditlink: https://desdaughter.com/2013/05/08/petit-manuel-de-pharmacovigilance-et-pharmacologie-clinique-sur-les-effets-nocifs-des-medicaments/
+#output: html_notebook
+---
+
+Bên cạnh phổ biến của R trong phân tích và biểu diễn số liệu, R có thể làm được rất nhiều thao tác xử lý đối với word và excel và powerpoint - đây là một đặc điểm đặc trưng "reproductive" (lặp lại) của R ứng dụng đa nền tảng. 
+
+# Giới thiệu chung và setup 
+
+Cài đặt officer package trên CRAN 
+
+# Đọc và ghi file trình chiếu powerpoint trên R
+
+```{r setup}
+library(officer)
+library(dplyr)
+
+```
+
+# Ý tưởng về trình chiếu 3 ngôn ngữ dựa trên dữ liệu là Outline trích xuất trong 1 file excel chứa 3 cột nội dung
+
+Quy trình:
+  - Đọc file excel chứa thông tin
+  - Đưa các ý tưởng vào file này và chốt về 3 ngôn ngữ để trình chiếu
+  - Đưa các cột này vào style tương ứng trên PPT (title +content)
+  - Thiết kế các tên style đặc trưng và phù hợp phong cách tác giả
+  - Mỗi thay đổi trong file excel tương ứng với sự thay đổi là file output powerpoint (tính lặp lại và cập nhật)
+  
+
+
+
+
+
+.... to be continued!
+
+                        
+Status (On projet Aug 2018) 
+
+```{r child="License.Rmd"}
+```
+
+
+
+
+

@@ -16,7 +16,8 @@ Thông thường R dùng rất phổ biến để phân tích và biểu diễn 
 
 Cài đặt magick package trên CRAN 
 
-```{r sutup, message=FALSE, warning=FALSE}
+
+```r
 #install.packages("magick")
 
 library(magick)
@@ -70,8 +71,6 @@ upload_get_link_image_dropbox=function(gg,name){
   
   return(link.01)
 }
-
-
 ```
 
 
@@ -79,66 +78,7 @@ upload_get_link_image_dropbox=function(gg,name){
 
 # Đọc và ghi ảnh
 
-```{r, include=FALSE}
-link=drop_media('Blog/Figure/prescrire-pv.jpg')$link #"https://dl.dropboxusercontent.com/apitl/1/AACvzJBdR-9FYqSTcmYDIawzyDWiYfX2_zHg642uVoNUIzHCj8ru_zVFlmdXj8f-hYnWIMugkESclQeMx7EhJ-P14clBhs6BPwFE78pMdw5o6Ez4StkRn8_g-aUkluX404YtM_Yw_fsgBiOrubRlSXITOiOItUR1WtBCUDLVzQ-Axh4VYxkCIOTH4xQ_z5GxU1u1u4mUb6sQBRYWXECIXJrSMhlpbRhWmxMTG5cbm99VPRwvCRVt85NL8ygULaXOJM-pOufCh3OKmE9v-64aYFFg"
 
-# magick::image_read(link) %>% image_info()
-
-link1=paste0('<figure>
-	<a href="',link, '"><img src="',link,'" alt=""></a>
-</figure>')
-  
-image_read(drop_media('Blog/Figure/prescrire-pv.jpg')$link) %>%
-  add_logo() %>% 
-  as.raster() %>% plot()
-
-```
-
-![example](`r upload_get_link_image_dropbox(gg,"image-test2.png")`)
-
-
-![example](https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1)
-
-## Link HTML
-
-![Time-to-onset Signal](https://www.dropbox.com/s/t5xbmb8ib9q781h/Time-to-onset%20signal%20detection.nb.html?raw=1)
-
-![Time-to-onset Signal](https://www.dropbox.com/s/t5xbmb8ib9q781h/Time-to-onset%20signal%20detection.nb.html?dl=0)
-
-![Time-to-onset Signal](https://www.dropbox.com/s/t5xbmb8ib9q781h/Time-to-onset%20signal%20detection.nb.html)
-
-## Other example 
-
-
-<figure>
-<a href="https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1"><img src="https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1" alt=""></a>
-</figure>
-
-## Đọc ảnh procedure
- 
-```{r}
-
-
-gg=mtcars %>% ggplot(aes(disp,mpg)) +geom_point(aes(col=as.factor(cyl))) 
-
-# upload_get_link_image_dropbox(gg,"image-test1.png")
-
-```
- 
- 
- 
-test 2
-
-
-
-
-.... to be continued!
-
-                        
-Status (On projet Aug 2018) 
-
-```{r child="License.Rmd"}
-```
 
 
 

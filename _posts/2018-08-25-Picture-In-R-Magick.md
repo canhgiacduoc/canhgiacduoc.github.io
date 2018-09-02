@@ -85,6 +85,13 @@ upload_get_link_image_dropbox=function(gg,name){
 
 ![example](https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1)
 
+## Link HTML page
+
+![Time-to-onset Signal](https://www.dropbox.com/s/t5xbmb8ib9q781h/Time-to-onset%20signal%20detection.nb.html?raw=1)
+
+![Time-to-onset Signal](https://www.dropbox.com/s/t5xbmb8ib9q781h/Time-to-onset%20signal%20detection.nb.html?dl=0)
+
+![Time-to-onset Signal](https://www.dropbox.com/s/t5xbmb8ib9q781h/Time-to-onset%20signal%20detection.nb.html)
 
 ## Other example 
 
