@@ -91,7 +91,9 @@ upload_get_link_image_dropbox=function(gg,name){
 
 ![Time-to-onset Signal](https://www.dropbox.com/s/t5xbmb8ib9q781h/Time-to-onset%20signal%20detection.nb.html?dl=0)
 
-![Time-to-onset Signal](https://www.dropbox.com/s/t5xbmb8ib9q781h/Time-to-onset%20signal%20detection.nb.html)
+![Time-to-onset Signal](.html/Time-to-onset%20signal%20detection.nb.html)
+
+!![Time-to-onset Signal4]('.html/Time-to-onset%20signal%20detection.nb.html')
 
 ## Other example 
 
