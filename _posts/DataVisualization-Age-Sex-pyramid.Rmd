@@ -1,0 +1,93 @@
+---
+layout: post
+title: "Biểu đồ (Data Visualisation): Tháp tuổi giới"
+modified: 2018-08-23
+tags: [R,data visualisation]
+image:
+  feature: prescrire-pv.jpg
+  credit: nguyenkhacdung
+  creditlink: https://desdaughter.com/2013/05/08/petit-manuel-de-pharmacovigilance-et-pharmacologie-clinique-sur-les-effets-nocifs-des-medicaments/
+author: "NGUYEN Khac-Dung"
+date: "`r format(Sys.Date(), format='%d-%m-%Y')`"
+output: 
+  html_notebook: 
+    df_print: kable
+#   rmarkdown::html_vignette #It reduces the size of a basic vignette from 600Kb to around 10Kb
+# vignette: >
+#   %\VignetteEngine{knitr::rmarkdown} 
+#   %\VignetteIndexEntry{Your Vignette Title} 
+#   %\VignetteEncoding{UTF-8}
+
+  md_document:
+    variant: markdown_github
+  word_document:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  comment = NA, #Remove Hashes in R Output from RMarkdown and Knitr
+  fig.align="center"
+)
+options(digits = 2)
+pacman::p_load("dplyr", "ggplot2",knitr,stringr,tidyr) 
+getAgeTable <- function(country, year) {
+  library(htmltab)
+  library(dplyr)
+  
+  c1 <- "https://www.census.gov/data-tools/demo/idb/region.php?N=%20Results%20&T=10&A=separate&RT=0&Y="  
+  c2 <- "&R=-1&C="
+  yrs <- gsub(" ", "", toString(year))
+  url <- paste0(c1, yrs, c2, country)
+  df <- htmltab(url, which=1)
+  nms <- c("Year", "Age", "total", "Male", "Female", "percent", "pctMale", "pctFemale", "sexratio")  
+  names(df) <- nms  
+  df=df%>% 
+    mutate(
+      total=as.numeric(str_replace_all(total,",","")),
+      Male=as.numeric(str_replace_all(Male,",","")),
+      Female=as.numeric(str_replace_all(Female,",","")),
+      percent=as.numeric(percent),  
+      pctMale=as.numeric(pctMale),    
+      pctFemale=as.numeric(pctFemale),    
+      sexratio=as.numeric(sexratio),
+      Year=as.numeric(Year)
+    )
+  
+  return(df)
+}
+
+```
+
+
+
+## Lấy dữ liệu tuổi giới trên Cencus 
+
+[Cencus](https://www.census.gov) là website cung cấp thông tin và dữ liệu chuẩn về tình hình dân số, tài chính, kinh tế, sức khỏe và nhiều khía cạnh kinh tế xã hội khác của các quốc gia.
+Cencus thường được lấy làm dữ liệu chuẩn về thông tin hành chính trong các nghiên cứu khoa học.
+
+Dữ liệu được trích xuất trong bảng sau:
+
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

@@ -1,0 +1,49 @@
+---
+title: "Ggvis so sánh với ggplot"
+output: html_notebook
+---
+
+
+```{r}
+
+library(gapminder)
+library(dplyr)
+library(ggplot2)
+library(broom)
+library(gganimate)
+
+theme_set(theme_bw())
+p <- ggplot(gapminder, aes(gdpPercap, lifeExp, size = pop, color = continent, frame = year)) +
+  geom_point() +
+  scale_x_log10()
+
+library(plotly)
+ggplotly(p, height = 900, width = 700) %>%
+  animation_opts(frame = 200,
+                 easing = "linear",
+                 redraw = FALSE)
+```
+
+
+```{r}
+library(ggvis)
+
+mtcars %>%
+  ggvis(~wt, ~mpg) %>%
+  layer_smooths(span = input_slider(0.5, 1, value = 1)) %>%
+  layer_points(size := input_slider(100, 1000, value = 100))
+
+```
+
+
+```{r}
+  library(ggplot2)
+  data.diamonds=ggplot2::diamonds
+  library(plotly)
+  gg=ggplot(data.diamonds,aes(x=carat,y=price,color=color))+geom_point(alpha=0.3)
+  ggplotly(gg)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).

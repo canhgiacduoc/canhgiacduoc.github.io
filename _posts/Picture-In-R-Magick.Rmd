@@ -10,13 +10,7 @@ image:
 #output: html_notebook
 ---
 
-Thông thường R dùng rất phổ biến để phân tích và biểu diễn số liệu, tuy nhiên R có thể làm được rất nhiều thao tác xử lý ảnh và quan trong nhất là tính "reproductive" (lặp lại) đặc trưng khi dùng R. Thông qua các ví dụ về xử lý ảnh, R có thể thay thế hoàn hảo cho các phần mềm xử lý ảnh thông dùng ở một vài thao tác, tạo ảnh động và các thuật toán sâu hơn dựa trên database là dữ liệu ảnh.
-
-# Giới thiệu chung và setup 
-
-Cài đặt magick package trên CRAN 
-
-```{r sutup, message=FALSE, warning=FALSE}
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
 #install.packages("magick")
 
 library(magick)
@@ -74,32 +68,50 @@ upload_get_link_image_dropbox=function(gg,name){
 
 ```
 
-
-
-
-# Đọc và ghi ảnh
-
-```{r, include=FALSE}
-link=drop_media('Blog/Figure/prescrire-pv.jpg')$link #"https://dl.dropboxusercontent.com/apitl/1/AACvzJBdR-9FYqSTcmYDIawzyDWiYfX2_zHg642uVoNUIzHCj8ru_zVFlmdXj8f-hYnWIMugkESclQeMx7EhJ-P14clBhs6BPwFE78pMdw5o6Ez4StkRn8_g-aUkluX404YtM_Yw_fsgBiOrubRlSXITOiOItUR1WtBCUDLVzQ-Axh4VYxkCIOTH4xQ_z5GxU1u1u4mUb6sQBRYWXECIXJrSMhlpbRhWmxMTG5cbm99VPRwvCRVt85NL8ygULaXOJM-pOufCh3OKmE9v-64aYFFg"
-
-# magick::image_read(link) %>% image_info()
-
-link1=paste0('<figure>
-	<a href="',link, '"><img src="',link,'" alt=""></a>
-</figure>')
-  
-image_read(drop_media('Blog/Figure/prescrire-pv.jpg')$link) %>%
-  add_logo() %>% 
-  as.raster() %>% plot()
+```{r link dropbox , include=FALSE}
+# link=drop_media('Blog/Figure/prescrire-pv.jpg')$link #"https://dl.dropboxusercontent.com/apitl/1/AACvzJBdR-9FYqSTcmYDIawzyDWiYfX2_zHg642uVoNUIzHCj8ru_zVFlmdXj8f-hYnWIMugkESclQeMx7EhJ-P14clBhs6BPwFE78pMdw5o6Ez4StkRn8_g-aUkluX404YtM_Yw_fsgBiOrubRlSXITOiOItUR1WtBCUDLVzQ-Axh4VYxkCIOTH4xQ_z5GxU1u1u4mUb6sQBRYWXECIXJrSMhlpbRhWmxMTG5cbm99VPRwvCRVt85NL8ygULaXOJM-pOufCh3OKmE9v-64aYFFg"
+# 
+# # magick::image_read(link) %>% image_info()
+# 
+# link1=paste0('<figure>
+# 	<a href="',link, '"><img src="',link,'" alt=""></a>
+# </figure>')
+#   
+# image_read(drop_media('Blog/Figure/prescrire-pv.jpg')$link) %>%
+#   add_logo() %>% 
+#   as.raster() %>% plot()
 
 ```
 
-![example](`r upload_get_link_image_dropbox(gg,"image-test2.png")`)
+Thông thường R dùng rất phổ biến để phân tích và biểu diễn số liệu, tuy nhiên R có thể làm được rất nhiều thao tác xử lý ảnh và quan trong nhất là tính "reproductive" (lặp lại) đặc trưng khi dùng R. Thông qua các ví dụ về xử lý ảnh, R có thể thay thế hoàn hảo cho các phần mềm xử lý ảnh thông dùng ở một vài thao tác, tạo ảnh động và các thuật toán sâu hơn dựa trên database là dữ liệu ảnh.
+
+# Giới thiệu chung và setup 
+
+Cài đặt magick package Version 1.9 trên CRAN : `install.packages(magick)`
+
+Thông tin về gói lệnh và cú pháp: `library(magick); ?magick`?
 
 
-![example](https://www.dropbox.com/s/fcs6ogrpsbrx392/Canhgiacduoc_Icon.png?raw=1)
 
-## Link HTML
+
+
+# Đọc và ghi ảnh  
+
+```{r}
+# ![example](`r upload_get_link_image_dropbox(gg,"image-test2.png")`)
+image_read("https://www.dropbox.com/s/p1ycjtve8y3t36q/prescrire-pv.jpg?raw=1") 
+
+
+
+```
+
+
+
+
+
+![example](https://www.dropbox.com/s/p1ycjtve8y3t36q/prescrire-pv.jpg?raw=1)
+
+## Link HTML  
 
 ![Time-to-onset Signal](https://www.dropbox.com/s/t5xbmb8ib9q781h/Time-to-onset%20signal%20detection.nb.html?raw=1)
 
@@ -119,7 +131,7 @@ image_read(drop_media('Blog/Figure/prescrire-pv.jpg')$link) %>%
 ```{r}
 
 
-gg=mtcars %>% ggplot(aes(disp,mpg)) +geom_point(aes(col=as.factor(cyl))) 
+# gg=mtcars %>% ggplot(aes(disp,mpg)) +geom_point(aes(col=as.factor(cyl))) 
 
 # upload_get_link_image_dropbox(gg,"image-test1.png")
 
@@ -129,10 +141,17 @@ gg=mtcars %>% ggplot(aes(disp,mpg)) +geom_point(aes(col=as.factor(cyl)))
  
 test 2
 
+[Link tới 1 file html](https://rawgit.com/canhgiacduoc/canhgiacduoc.github.io/master/_posts/ggvis-ggplot.html)
 
 
 
 .... to be continued!
+
+[Link1](https://rawgit.com/canhgiacduoc/canhgiacduoc.github.io/master/_posts/Picture-In-R-Magick.nb.html)
+
+[Link1](https://www.dropbox.com/s/t5xbmb8ib9q781h/Time-to-onset%20signal%20detection.nb.html?raw=1)
+
+
 
                         
 Status (On projet Aug 2018) 
