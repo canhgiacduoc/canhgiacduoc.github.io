@@ -134,6 +134,12 @@ test 2
 
 .... to be continued!
 
+[Link1](https://rawgit.com/canhgiacduoc/canhgiacduoc.github.io/master/_posts/Picture-In-R-Magick.nb.html)
+
+[Link1](https://www.dropbox.com/s/t5xbmb8ib9q781h/Time-to-onset%20signal%20detection.nb.html?raw=1)
+
+
+
                         
 Status (On projet Aug 2018) 
 
