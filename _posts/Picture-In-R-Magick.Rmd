@@ -102,8 +102,7 @@ library(magick)
 ?magick
 dl_from_dropbox <- function(x, key) {
   require(RCurl)
-  bin <- getBinaryURL(paste0("https://dl.dropboxusercontent.com/s/", key, "/", x),
-                      ssl.verifypeer = FALSE)
+  bin <- getBinaryURL(paste0("https://dl.dropboxusercontent.com/s/", key, "/", x), ssl.verifypeer = FALSE)
   con <- file(x, open = "wb")
   writeBin(bin, con)
   close(con)
