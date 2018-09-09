@@ -26,6 +26,7 @@ Thông tin về gói lệnh và cú pháp: `library(magick); ?magick`
 
 
 
+
 {% highlight r %}
 
 library(magick)
