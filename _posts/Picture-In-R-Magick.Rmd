@@ -89,7 +89,7 @@ Thông thường R dùng rất phổ biến để phân tích và biểu diễn 
 
 Cài đặt magick package Version 1.9 trên CRAN : `install.packages(magick)`
 
-Thông tin về gói lệnh và cú pháp: `library(magick); ?magick`?
+Thông tin về gói lệnh và cú pháp: `library(magick); ?magick`
 
 
 
@@ -97,15 +97,12 @@ Thông tin về gói lệnh và cú pháp: `library(magick); ?magick`?
 
 # Đọc và ghi ảnh  
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 # ![example](`r upload_get_link_image_dropbox(gg,"image-test2.png")`)
 image_read("https://www.dropbox.com/s/p1ycjtve8y3t36q/prescrire-pv.jpg?raw=1") 
 
 
-
 ```
-
-
 
 
 

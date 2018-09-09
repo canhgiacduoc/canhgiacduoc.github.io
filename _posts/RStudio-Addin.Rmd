@@ -1,0 +1,126 @@
+---
+---
+layout: post
+title: "Khám phá RStudio (Advanced) : Add-in và tùy biến phím tắt dùng trong Addin"
+modified: 2018-08-23
+tags: [R,data visualisation]
+image:
+  feature: prescrire-pv.jpg
+  credit: nguyenkhacdung
+  creditlink: https://desdaughter.com/2013/05/08/petit-manuel-de-pharmacovigilance-et-pharmacologie-clinique-sur-les-effets-nocifs-des-medicaments/
+#output: html_notebook
+---
+
+Trong post này, tôi sẽ trình bày các kinh nghiệm của mình trong sử dụng R Studio liên quan tới dùng các gói lệnh Add-in và vận dụng trong nghiên cứu và khai phá dữ liệu.
+
+# Giới thiệu chung
+Mục đích: Tạo các phím tắt, lập chương trình 
+
+## rsam tạo, quản lý và tùy biến phím tắt
+
+Cài đặt từ Github do gói lệnh install.github () từ `library(devtools)`
+
+```{r eval=FALSE}
+library(devtools)
+install_github("yonicd/rsam")
+library(rsam)
+```
+
+
+Sau khi cài đặt package rsam thì ở mục Addins
+
+[](https://www.dropbox.com/s/q5lxojji14j2l45/rsam1.png?raw=1)
+
+Để thay đổi cách gán phím tắt :
+```{r eval=FALSE}
+keys <- KEYS$`left command/window key` + KEYS$shift + KEYS$l
+
+rsam::set_shortcut(fn = 'rsam::lla1',shortcut = keys )
+
+#if the binding already has a shortcut mapped to it `overide` must be TRUE
+set_shortcut(fn = 'blogdown::serve_site',shortcut = key+ KEYS$`2`, overide = TRUE)
+```
+
+Nếu phím tắt đã từng tồn lại, tùy biến overide=TRUE sẽ vô hiệu hóa phím tắt trước đó và kích hoạt phím tắt thông qua rsam 
+
+Muốn gỡ bỏ phím tắt thì dùng câu lệnh :
+
+```{r}
+rm_shortcut(fn = 'blogdown::serve_site')
+```
+
+
+ `Chú ý khi dùng rsam thì pipline (%>%) sẽ bị tạm thời vô hiệu hóa.`
+
+Ví dụ cụ thể để chạy 1 block lệnh bằng phím tắt __Command+Shift+L+1__ 
+
+lla = Limited Liability Addins
+
+```{r eval=FALSE}
+
+library(rsam)
+rsam()
+rsam_fn_1=function(){
+knitr::knit(input =paste0("_posts/",file[i]),
+            output = paste0("_posts/",format(Sys.Date(),
+                                             format="%Y-%m-%d"),"-",
+                            substr(file[i], 1, nchar(file[i])-3),"md"))
+}
+
+
+rsam_fn_2=function(){
+  print(my_doc, target = paste0("docx/example",
+                                format(Sys.Date(),format="%d%b%y"),
+                                ".docx"))
+}
+```
+
+Khi lệnh fn_1 và fn_2 được định nghĩa, mỗi lần ấn tổ hợp phím tắt ở trên thì dù bất cứ ở cửa sổ nào thì toàn bộ câu lệnh được gói (Wrap) trong fn_ sẽ được tự động chạy.
+
+-> Ý nghĩa việc này giúp tiết kiệm đáng kể thời gian thao tác chạy câu lệnh, đặc biệt là khi dùng thao tác với knitr, ggplot
+
+Bên cạnh đó, có thể tùy chỉnh lại các phím tắt có trên Addins bằng cách định nghĩa lại các phím thích hợp thông qua
+
+```{r}
+fetch_addins()
+```
+
+
+## Clipr - copy dữ liệu sang bộ nhớ đệm clipboard
+
+Với thủ thuật này, không cần phải xuất/lưu biến bảng biểu hay kết quả phân tích sang dạng csv hay excel mà chỉ cần dùng addins này thì toàn bộ output/biến sẽ được lưu vào có thể paste trực tiếp trên word (kết quả phân tích) hoặc excel (ưu tiên với bảng dữ liệu).
+Có thể gán phím tắt cho tác vụ này ở đây mình dùng là __ctrl+alt+C__ để copy giá trị nội dung của 1 biến (value) sau khi thao tác bôi đen dòng biến hoặc dòng lệnh chứa biến đó 
+
+Đặc biệt có thể copy được biến thay đổi bởi pipline ( %>% )
+
+## Datapasta 
+Paste dữ liệu dưới dạng bảng Trible,tible dạng vector dạng data.frame....
+Hữu dụng
+
+```{r}
+devtools::install_github(datapasta)
+```
+
+## Remedy - hỗ trợ soạn thảo trên Rmardown
+
+Thao tác chèn link, kiểu chữ, styling, Heading... được gán các phím tắt quen thuộc như Ctrl+B = bold, Ctrl+I = Italic....
+
+```{r}
+install.packages(remedy)
+```
+
+# Wrapmd - tự động cắt chữ xuống 
+
+## Phím tắt 
+
+
+
+
+.... to be continued!
+
+
+                        
+Status (On projet Sept 2018) 
+
+```{r child="License.Rmd"}
+```

@@ -20,15 +20,13 @@ Thông thường R dùng rất phổ biến để phân tích và biểu diễn 
 
 Cài đặt magick package Version 1.9 trên CRAN : `install.packages(magick)`
 
-Thông tin về gói lệnh và cú pháp: `library(magick); ?magick`?
+Thông tin về gói lệnh và cú pháp: `library(magick); ?magick`
 
 
 
 
 
 # Đọc và ghi ảnh  
-
-<img src="figure/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
 
 
 
@@ -54,6 +52,11 @@ Thông tin về gói lệnh và cú pháp: `library(magick); ?magick`?
 ## Đọc ảnh procedure
  
 
+```r
+# gg=mtcars %>% ggplot(aes(disp,mpg)) +geom_point(aes(col=as.factor(cyl))) 
+
+# upload_get_link_image_dropbox(gg,"image-test1.png")
+```
  
  
  
