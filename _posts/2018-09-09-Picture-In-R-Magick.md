@@ -25,7 +25,9 @@ Thông tin về gói lệnh và cú pháp: `library(magick); ?magick`
 
 
 
+
 {% highlight ruby %}
+
 library(magick)
 ?magick
 {% endhighlight %}
