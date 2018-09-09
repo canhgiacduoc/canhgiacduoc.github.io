@@ -67,14 +67,15 @@ dl_from_dropbox <- function(x, key) {
 </figure>
 
 ## Đọc ảnh procedure
- 
+
+{% highlight r %}
 
 ```r
-# gg=mtcars %>% ggplot(aes(disp,mpg)) +geom_point(aes(col=as.factor(cyl))) 
+# gg=mtcars %>% ggplot(aes(disp,mpg)) +geom_point(aes(col=as.factor(cyl)))  #      sdf   adf
 
 # upload_get_link_image_dropbox(gg,"image-test1.png")
 ```
- 
+{% endhighlight %} 
  
  
 test 2
