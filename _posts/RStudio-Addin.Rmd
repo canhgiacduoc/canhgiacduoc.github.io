@@ -1,5 +1,4 @@
 ---
----
 layout: post
 title: "Khám phá RStudio (Advanced) : Add-in và tùy biến phím tắt dùng trong Addin"
 modified: 2018-08-23
@@ -45,7 +44,7 @@ Nếu phím tắt đã từng tồn lại, tùy biến overide=TRUE sẽ vô hi�
 
 Muốn gỡ bỏ phím tắt thì dùng câu lệnh :
 
-```{r}
+```{r eval=FALSE}
 rm_shortcut(fn = 'blogdown::serve_site')
 ```
 
@@ -81,7 +80,7 @@ Khi lệnh fn_1 và fn_2 được định nghĩa, mỗi lần ấn tổ hợp ph
 
 Bên cạnh đó, có thể tùy chỉnh lại các phím tắt có trên Addins bằng cách định nghĩa lại các phím thích hợp thông qua
 
-```{r}
+```{r eval=T}
 fetch_addins()
 ```
 
@@ -97,7 +96,7 @@ Có thể gán phím tắt cho tác vụ này ở đây mình dùng là __ctrl+a
 Paste dữ liệu dưới dạng bảng Trible,tible dạng vector dạng data.frame....
 Hữu dụng
 
-```{r}
+```{r  eval=FALSE}
 devtools::install_github(datapasta)
 ```
 
@@ -105,7 +104,7 @@ devtools::install_github(datapasta)
 
 Thao tác chèn link, kiểu chữ, styling, Heading... được gán các phím tắt quen thuộc như Ctrl+B = bold, Ctrl+I = Italic....
 
-```{r}
+```{r  eval=FALSE}
 install.packages(remedy)
 ```
 
