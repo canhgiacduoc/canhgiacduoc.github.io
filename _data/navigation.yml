@@ -7,4 +7,8 @@
   url: http://nguyenkhacdung.github.io
   
 - title: View my CV
+<<<<<<< HEAD
   url: CV.pdf
+=======
+  url: {{ site.url }}/CV.pdf
+>>>>>>> d5ad6a150d1a610937cb9babed71285b406a10d7
