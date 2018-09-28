@@ -12,13 +12,13 @@ owner:
   name:           Canhgiacduoc
   avatar:         Canhgiacduoc Icon -White Background.png
   bio:            "Publish or perish. Sharing experiences for Vietnamese researcher's development in the same region._Kevin NGUYEN_"
-  email:          canhgiacduoc@email.com
+  email:          canhgiacduoc@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:   canhgiacduoc     
   facebook:  C%E1%BA%A3nh-gi%C3%A1c-D%C6%B0%E1%BB%A3c-710558215764981     
   github:         
   stackexchange:  
-  linkedin:       
+  linkedin:   nguyen-khac-dung-86122496   
   instagram:      
   flickr:         
   tumblr:         
@@ -29,7 +29,7 @@ owner:
 background: 
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+google_analytics:   UA-126628852-1
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
