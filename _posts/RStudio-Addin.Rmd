@@ -58,10 +58,11 @@ Muốn gỡ bỏ phím tắt thì dùng câu lệnh :
 
 ```{r, eval=FALSE, include=T}
 rm_shortcut(fn = 'blogdown::serve_site')
+#`Chú ý khi dùng rsam thì pipline (%>%) sẽ bị tạm thời vô hiệu hóa.`
 ```
 
 
- `Chú ý khi dùng rsam thì pipline (%>%) sẽ bị tạm thời vô hiệu hóa.`
+ 
 
 Ví dụ cụ thể để chạy 1 block lệnh bằng phím tắt __Command+Shift+L+1__ 
 
