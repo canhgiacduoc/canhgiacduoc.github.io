@@ -4,11 +4,7 @@
   url: /theme-setup/
 
 - title: External Link-1
-  url: http://nguyenkhacdung.github.io
+  url: https://univtlse3fr-my.sharepoint.com/:b:/g/personal/khac-dung_nguyen_univ-tlse3_fr/EbLuWE0ySL9Oqpdm1hoCh_YB35DAvQAynO_gT9Qeff8g5Q?e=yKgZn2
   
 - title: View my CV
-<<<<<<< HEAD
-  url: CV.pdf
-=======
-  url: {{ site.url }}/CV.pdf
->>>>>>> d5ad6a150d1a610937cb9babed71285b406a10d7
+  url: https://univtlse3fr-my.sharepoint.com/:b:/g/personal/khac-dung_nguyen_univ-tlse3_fr/EbLuWE0ySL9Oqpdm1hoCh_YB35DAvQAynO_gT9Qeff8g5Q?e=yKgZn2
